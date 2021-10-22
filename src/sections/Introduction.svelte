@@ -1,4 +1,4 @@
-<main class="bg-purple-700 w-full">
+<main class="bg-purple-600 w-full">
   <div class="introduction-content py-6 flex flex-col align-middle">
     <h1>Hi! I'm Leo!</h1>
     <table class="table-auto w-80 mx-auto">
