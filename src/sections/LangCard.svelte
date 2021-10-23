@@ -11,7 +11,9 @@
   }
 </script>
 
-<main class="shadow-lg w-72 border-black border-2 rounded m-12">
+<main
+  class="shadow-lg w-full md:w-2/3 lg:w-1/3 xl:w-1/4 border-black border-2 rounded m-12"
+>
   <h1 class="p-2">Language</h1>
   <hr />
   <div class="card-content p-2">
@@ -32,6 +34,9 @@
       </Accordion>
     </div>
   </div>
+  <h2 class="card-footer text-gray-500 px-4 pb-4 text-xs">
+    Yes, this is my language skill? Isn't this what you are expecting?
+  </h2>
 </main>
 
 <style lang="postcss">

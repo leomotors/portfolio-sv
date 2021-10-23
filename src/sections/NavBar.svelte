@@ -3,7 +3,7 @@
 </script>
 
 <main
-  class="NavBar bg-blue-600 w-full h-12 flex flex-row align-baseline justify-between"
+  class="NavBar bg-indigo-200 w-full h-12 flex flex-row align-baseline justify-between"
 >
   <div class="gh-tag flex flex-row">
     <img

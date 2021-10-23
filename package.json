@@ -1,10 +1,10 @@
 {
   "name": "portfolio-sv",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "scripts": {
-    "dev": "yarn lm:inc && vite",
-    "build": "vite build",
+    "dev": "yarn lm:inc && yarn lm:config && vite",
+    "build": "yarn lm:config && vite build",
     "serve": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lm:inc": "node node_modules/leomotors-automation/incrementVersion.js",

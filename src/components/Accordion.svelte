@@ -12,7 +12,7 @@
     active ? "ring-2" : "not-active"
   }`}
 >
-  <div class="titles">
+  <div class="titles select-none">
     <span class="font-semibold">{title}</span>
     <span class="text-gray-500">{subtitle}</span>
   </div>
@@ -20,7 +20,7 @@
 </div>
 
 {#if active}
-  <div class="content px-4 text-left">
+  <div class="content px-4 py-2 mt-2 mx-1.5 text-left bg-gray-100 rounded">
     <slot />
   </div>
 {/if}

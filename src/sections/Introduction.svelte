@@ -1,4 +1,4 @@
-<main class="bg-purple-600 w-full">
+<main class="bg-pink-200 w-full">
   <div class="introduction-content py-6 flex flex-col align-middle">
     <h1>Hi! I'm Leo!</h1>
     <table class="table-auto w-80 mx-auto">
@@ -23,10 +23,6 @@
 </main>
 
 <style lang="postcss">
-  * {
-    @apply text-white;
-  }
-
   table td {
     @apply text-left;
   }
