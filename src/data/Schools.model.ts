@@ -3,6 +3,8 @@ export interface School {
   gen: string;
   enroll: number;
   graduate: number;
+  image: string;
+  website: string;
 }
 
 export type Schools = School[];

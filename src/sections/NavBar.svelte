@@ -3,11 +3,11 @@
 </script>
 
 <main
-  class="navbar bg-indigo-200 w-full h-12 flex flex-row align-baseline justify-between"
+  class="navbar bg-indigo-200 w-full h-12 px-6 flex flex-row align-baseline justify-between"
 >
   <div class="gh-tag flex flex-row">
     <img
-      class="h-10 w-10 rounded-full my-auto ml-6"
+      class="h-10 w-10 rounded-full my-auto"
       src="https://avatars.githubusercontent.com/u/59821765?v=4"
       alt="My GitHub Profile Pic"
     />
@@ -21,11 +21,17 @@
     >
       <GitHub />
     </a>
+    <span
+      class="TEMPORARY my-auto mx-2 px-1 font-medium text-gray-500 select-none"
+    >
+      <span class="inline md:hidden"> PREVIEW </span>
+      <span class="hidden md:inline"> EARLY PREVIEW: UNDER CONSTRUCTION </span>
+    </span>
   </div>
 
   <div class="nav-menu flex flex-row">
     <a href="/">Project</a>
-    <a class="pr-6" href="/about">About Website</a>
+    <a href="/about">About Website</a>
   </div>
 </main>
 

@@ -5,6 +5,12 @@
 </script>
 
 <main class="page-content">
+  <div class="alert-box bg-pink-300 m-4 rounded-lg border-red-500 border-2">
+    <p class="p-2">
+      <b>UNDER CONSTRUCTION</b>: Website not done yet. Please don't consider
+      this as my portfolio yet!
+    </p>
+  </div>
   <Introduction />
   <div class="lang-cards flex flex-row justify-center">
     <LangCard />
@@ -14,7 +20,7 @@
       <h1 class="p-2 font-semibold">Programming Language</h1>
       <hr class="text-gray-300 mx-4" />
       <div class="card-content h-32 flex flex-col justify-center">
-        <h1 class="font-semibold text-center m-auto">Placeholder</h1>
+        <h1 class="font-semibold text-center m-auto">Centered h1</h1>
       </div>
     </div>
   </div>
