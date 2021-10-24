@@ -1,9 +1,13 @@
 const config = {
   mode: "jit",
-  purge: ["./src/**/*.{html,js,svelte,ts}"],
+  purge: ["index.html", "./src/**/*.svelte"],
 
   theme: {
-    extend: {},
+    extend: {
+      scale: {
+        102.5: "1.025",
+      },
+    },
   },
 
   plugins: [],

@@ -1,4 +1,8 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
+  import { fade } from "svelte/transition";
+  const dispatch = createEventDispatcher();
+
   import Chevron from "../icons/Chevron.svelte";
 
   export let active: boolean;
@@ -8,9 +12,12 @@
 </script>
 
 <div
-  class={`title mx-2 px-2 flex flex-row justify-between align-baseline ${
+  class={`title m-2 px-2 flex flex-row justify-between align-baseline ${
     active ? "ring-2" : "not-active"
-  }`}
+  } rounded`}
+  on:click={() => {
+    dispatch("titleclick");
+  }}
 >
   <div class="titles select-none">
     <span class="font-semibold">{title}</span>
@@ -20,7 +27,10 @@
 </div>
 
 {#if active}
-  <div class="content px-4 py-2 mt-2 mx-1.5 text-left bg-gray-100 rounded">
+  <div
+    class="content px-4 py-2 mt-2 mx-1.5 text-left bg-gray-100 rounded"
+    transition:fade={{ duration: 150 }}
+  >
     <slot />
   </div>
 {/if}

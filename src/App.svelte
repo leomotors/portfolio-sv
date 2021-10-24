@@ -5,7 +5,5 @@
   import NavBar from "./sections/NavBar.svelte";
 </script>
 
-<main class="text-center">
-  <NavBar />
-  <Router {routes} />
-</main>
+<NavBar />
+<Router {routes} />

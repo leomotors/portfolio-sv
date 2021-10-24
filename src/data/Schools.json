@@ -1,0 +1,16 @@
+{
+    "schools": [
+        {
+            "name": "Assumption College",
+            "gen": "AC136",
+            "enroll": 2016,
+            "graduate": 2019
+        },
+        {
+            "name": "Triam Udom Suksa School",
+            "gen": "TU82",
+            "enroll": 2019,
+            "graduate": 2022
+        }
+    ]
+}

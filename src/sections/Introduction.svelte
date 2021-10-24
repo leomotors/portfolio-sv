@@ -1,6 +1,7 @@
-<main class="bg-pink-200 w-full">
-  <div class="introduction-content py-6 flex flex-col align-middle">
+<main class="md:flex md:flex-row justify-around max-w-full lg:mx-12 mt-5">
+  <div class="introduction bg-pink-200">
     <h1>Hi! I'm Leo!</h1>
+    <h2 class="mt-2 font-semibold">My Meta Info</h2>
     <table class="table-auto w-80 mx-auto">
       <tr>
         <td> 🚹 Gender </td>
@@ -20,10 +21,25 @@
       </tr>
     </table>
   </div>
+  <div class="introduction bg-green-200">
+    <h1 class="font-bold text3-xl">My Preference</h1>
+  </div>
 </main>
 
 <style lang="postcss">
+  .introduction {
+    @apply py-6 px-3 flex flex-col align-middle shadow-xl;
+  }
+
+  .introduction > h1 {
+    @apply font-bold text-3xl;
+  }
+
   table td {
     @apply text-left;
+  }
+
+  main > div {
+    @apply w-full md:w-1/2 lg:w-1/3 rounded-xl m-2 hover:scale-105 transition-transform;
   }
 </style>

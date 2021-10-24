@@ -14,4 +14,9 @@
       GitHub
     </a>
   </h1>
+  <img
+    src="src/assets/svelte.png"
+    alt="Svelte Logo"
+    class="h-24 w-auto mx-auto"
+  />
 </main>
