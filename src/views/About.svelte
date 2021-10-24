@@ -15,11 +15,8 @@
       GitHub
     </a>
   </h1>
-  <img
-    src="src/assets/svelte.png"
-    alt="Svelte Logo"
-    class="h-24 w-auto mx-auto"
-  />
+  <h1>Frontend Framework: Svelte + Vite ( + TypeScript)</h1>
+  <h1>CSS Framework: Tailwind</h1>
 </main>
 
 <style lang="postcss">

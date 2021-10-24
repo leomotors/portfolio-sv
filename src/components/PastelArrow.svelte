@@ -1,11 +1,8 @@
-<script lang="ts">
-  const colors = [200, 300, 400, 500];
-</script>
-
 <div
   class="pastel-arrow my-auto font-bold text-6xl hidden lg:flex flex-row select-none arrow-wrapper"
 >
-  {#each colors as color}
-    <span class={`text-blue-${color}`}>&gt;</span>
-  {/each}
+  <span class="text-blue-200">&gt;</span>
+  <span class="text-blue-300">&gt;</span>
+  <span class="text-blue-400">&gt;</span>
+  <span class="text-blue-500">&gt;</span>
 </div>
