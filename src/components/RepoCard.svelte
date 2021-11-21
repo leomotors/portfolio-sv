@@ -12,7 +12,7 @@
 >
   <div
     class={`img w-full h-56${repo.bgtl ? " bgtl" : ""}`}
-    style={`background-image: url(${repo.img})`}
+    style={`background-image: url("${repo.img}")`}
   />
   <div class="card-detail">
     <h1 class="font-bold text-xl">{repo.name}</h1>
