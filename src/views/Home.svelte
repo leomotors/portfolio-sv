@@ -19,10 +19,20 @@
     >
       <h1 class="p-2 font-semibold">Programming Language</h1>
       <hr class="text-gray-300 mx-4" />
-      <div class="card-content h-32 flex flex-col justify-center">
-        <h1 class="font-semibold text-center m-auto">Centered h1</h1>
+      <div class="card-content h-32 my-auto px-4">
+        {#each ["C", "C++", "JavaScript", "TypeScript", "Python", "Dart", "HTML", "CSS", "SCSS", "Svelte"] as lang}
+          <span> {lang} </span>
+        {/each}
       </div>
     </div>
   </div>
+  <button
+    class="rounded-xl shadow-md bg-blue-200 hover:bg-blue-300 hover:scale-105 transition-transform p-4 mb-8"
+    on:click={() => {
+      window.location.href = "/projects";
+    }}
+  >
+    <h1 class="font-bold text-4xl">My Projects</h1>
+  </button>
   <EdHistory />
 </main>

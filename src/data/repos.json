@@ -1,0 +1,40 @@
+{
+    "featured": [
+        {
+            "name": "RTX-2090-TiFy",
+            "url": "https://github.com/Leomotors/RTX-2090-TiFy",
+            "desc": "Meme maker as shown in the GIF, GUI C++ Program with wxWidgets and OpenCV",
+            "img": "https://github.com/Leomotors/RTX-2090-TiFy/blob/main/assets/linus-example.gif?raw=true"
+        },
+        {
+            "name": "anime-captcha",
+            "url": "https://github.com/Leomotors/anime-captcha",
+            "desc": "You may have seen Anime Captcha meme, I recreate that in website!",
+            "img": "images/anime-captcha.png",
+            "bgtl": true
+        },
+        {
+            "name": "Salim-Bot",
+            "url": "https://github.com/Leomotors/Salim-Bot",
+            "desc": "My First Ever Discord Bot, useless but fun to play with! Currently being deployed",
+            "img": "images/salim-bot.png",
+            "bgtl": true
+        }
+    ],
+    "carelessdev": [
+        {
+            "name": "Harunon",
+            "url": "https://github.com/CarelessDev/Harunon",
+            "desc": "Harunon is Discord Bot currently being deployed in our server",
+            "img": "https://c.tenor.com/kp-3oTEaTbEAAAAC/haruno-haruno-yukinoshita.gif"
+        }
+    ],
+    "big_projects": [
+        {
+            "name": "Food Busters",
+            "url": "https://github.com/Food-Busters",
+            "desc": "Participated in AIS Jump Thailand Hackathon, Our goal is to make innovation that reduces pollution from food wastes",
+            "img": "https://github.com/Food-Busters/food_busters/blob/main/assets/images/logo_white.jpg?raw=true"
+        }
+    ]
+}

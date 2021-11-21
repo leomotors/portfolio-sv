@@ -1,5 +1,6 @@
 import Home from "../views/Home.svelte";
 import About from "../views/About.svelte";
+import Projects from "../views/Projects.svelte";
 
 const routes = [
   {
@@ -9,6 +10,10 @@ const routes = [
   {
     name: "about",
     component: About,
+  },
+  {
+    name: "projects",
+    component: Projects,
   },
 ];
 

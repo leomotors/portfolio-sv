@@ -1,7 +1,7 @@
 <main class="md:flex md:flex-row justify-around max-w-full lg:mx-12 mt-5">
   <div class="introduction bg-pink-200">
     <h1>Hi! I'm Leo!</h1>
-    <h2 class="mt-2 font-semibold">My Meta Info</h2>
+    <h2 class="mt-2 font-semibold">About me</h2>
     <table class="table-auto w-80 mx-auto">
       <tr>
         <td> 🚹 Gender </td>
@@ -22,7 +22,12 @@
     </table>
   </div>
   <div class="introduction bg-green-200">
-    <h1 class="font-bold text3-xl">My Preference</h1>
+    <h1 class="font-bold text3-xl">What I mostly do</h1>
+    <p>C++</p>
+    <p>Discord Bot (discord.js)</p>
+    <p>Website with Svelte</p>
+    <p>Flutter Android App</p>
+    <p>💛 Open-Source Projects 💛</p>
   </div>
 </main>
 

@@ -30,7 +30,7 @@
       active={active == 1}
       on:titleclick={setActive(1)}
       title="English"
-      subtitle="not that good"
+      subtitle="Competent User"
     >
       This is my secondary Language
     </Accordion>

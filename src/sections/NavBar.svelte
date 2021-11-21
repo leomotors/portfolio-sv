@@ -11,9 +11,7 @@
       src="https://avatars.githubusercontent.com/u/59821765?v=4"
       alt="My GitHub Profile Pic"
     />
-    <a class="nav-label ml-2 hover:text-gray-800" target="_blank" href="/">
-      Leomotors
-    </a>
+    <a class="nav-label ml-2 hover:text-gray-800" href="/"> Leomotors </a>
     <a
       class="nav-label ml-2 hover:text-gray-800"
       target="_blank"
@@ -30,7 +28,7 @@
   </div>
 
   <div class="nav-menu flex flex-row">
-    <a href="/">Project</a>
+    <a href="/projects">Projects</a>
     <a href="/about">About Website</a>
   </div>
 </main>
