@@ -12,9 +12,9 @@
 </script>
 
 <main
-  class="shadow-lg w-full md:w-2/3 lg:w-1/3 xl:w-1/4 bg-white rounded m-12 hover:scale-105 transition-transform"
+  class="shadow-lg w-full md:w-2/3 lg:w-1/3 xl:w-1/4 bg-white rounded-lg m-12 hover:scale-105 transition-transform"
 >
-  <h1 class="p-2 font-semibold">Language</h1>
+  <h1 class="p-2 font-semibold text-2xl">Language</h1>
   <hr class="text-gray-300 mx-4" />
   <div class="card-content p-2">
     <Accordion

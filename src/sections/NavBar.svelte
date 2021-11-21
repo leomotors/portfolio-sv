@@ -22,14 +22,17 @@
     <span
       class="TEMPORARY my-auto mx-2 px-1 font-medium text-gray-500 select-none"
     >
-      <span class="inline md:hidden"> PREVIEW </span>
+      <span class="hidden sm:inline md:hidden"> PREVIEW </span>
       <span class="hidden md:inline"> EARLY PREVIEW: UNDER CONSTRUCTION </span>
     </span>
   </div>
 
   <div class="nav-menu flex flex-row">
     <a href="/projects">Projects</a>
-    <a href="/about">About Website</a>
+    <a href="/about">
+      <span class="hidden sm:inline">About Website</span>
+      <span class="inline sm:hidden">About</span>
+    </a>
   </div>
 </main>
 

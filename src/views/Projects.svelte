@@ -3,11 +3,14 @@
   import { featured, carelessdev, big_projects } from "../data/repos.json";
 </script>
 
-<main class="sm:mx-4 md:mx-8 lg:mx-12 xl:mx-36">
+<main class="sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-36">
   <!-- Featured GitHub Repositories -->
   <div class="big-card">
     <h1>Featured GitHub Repositories</h1>
-    <h2>Project I done and is available on my main account repositories</h2>
+    <h2>
+      Some of Amazing projects I have done and is available on my main account
+      repositories
+    </h2>
     <hr />
     <div class="card-content">
       {#each featured as repo}
@@ -67,6 +70,6 @@
   }
 
   .big-card > .card-content {
-    @apply flex flex-col md:flex-row justify-start;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
   }
 </style>

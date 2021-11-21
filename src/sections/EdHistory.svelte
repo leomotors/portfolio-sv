@@ -12,7 +12,7 @@
   >
     {#each schools as school, index}
       <div
-        class="school-card bg-gray-200 w-72 rounded shadow-xl hover:scale-105 transition-transform hover:cursor-pointer"
+        class="school-card bg-gray-200 w-72 mx-auto mt-4 md:mt-0 md:mx-0 rounded shadow-xl hover:scale-105 transition-transform hover:cursor-pointer"
         on:click={() => {
           window.open(school.website, "_blank");
         }}

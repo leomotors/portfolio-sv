@@ -28,7 +28,6 @@
 
 <style lang="postcss">
   .repo-card {
-    @apply w-full md:w-1/2 lg:w-1/4 xl:w-1/5;
     @apply rounded-lg shadow-lg m-4;
     @apply transition-transform;
     transition-duration: 0.5;
@@ -56,6 +55,6 @@
   }
 
   .card-detail {
-    @apply p-4;
+    @apply p-4 select-none;
   }
 </style>
