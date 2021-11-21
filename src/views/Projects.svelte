@@ -3,7 +3,7 @@
   import { featured, carelessdev, big_projects } from "../data/repos.json";
 </script>
 
-<main class="mx-4">
+<main class="sm:mx-4 md:mx-8 lg:mx-12 xl:mx-36">
   <!-- Featured GitHub Repositories -->
   <div class="big-card">
     <h1>Featured GitHub Repositories</h1>
@@ -20,7 +20,8 @@
   <div class="big-card">
     <h1>CarelessDev</h1>
     <h2>
-      CarelessDev is where my friends and I spend time creating useless stuff
+      CarelessDev is where my friends and I spend time creating useless stuff,
+      below is projects I have contributed to
     </h2>
     <hr />
     <div class="card-content">
@@ -33,6 +34,7 @@
   <!-- Other Big Projects -->
   <div class="big-card">
     <h1>Other Big Projects</h1>
+    <h2>Some Big Projects I have spend lots of time with</h2>
     <hr />
     <div class="card-content">
       {#each big_projects as repo}
@@ -44,7 +46,7 @@
 
 <style lang="postcss">
   .big-card {
-    @apply m-4 p-4 max-w-full rounded bg-white shadow-lg;
+    @apply m-4 p-4 max-w-full rounded-xl bg-white shadow-lg;
   }
 
   .big-card > h1 {

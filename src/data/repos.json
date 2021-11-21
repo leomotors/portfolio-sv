@@ -1,31 +1,42 @@
 {
     "featured": [
         {
-            "name": "RTX-2090-TiFy",
+            "name": "RTX 2090 TiFy",
             "url": "https://github.com/Leomotors/RTX-2090-TiFy",
             "desc": "Meme maker as shown in the GIF, GUI C++ Program with wxWidgets and OpenCV",
+            "language": "C++",
             "img": "https://github.com/Leomotors/RTX-2090-TiFy/blob/main/assets/linus-example.gif?raw=true"
         },
         {
-            "name": "anime-captcha",
+            "name": "Anime Captcha",
             "url": "https://github.com/Leomotors/anime-captcha",
-            "desc": "You may have seen Anime Captcha meme, I recreate that in website!",
+            "desc": "You may have seen Anime Captcha meme, I recreate that in website! available for you to try!",
+            "language": "Svelte",
             "img": "images/anime-captcha.png",
             "bgtl": true
         },
         {
-            "name": "Salim-Bot",
+            "name": "Salim Bot",
             "url": "https://github.com/Leomotors/Salim-Bot",
             "desc": "My First Ever Discord Bot, useless but fun to play with! Currently being deployed",
+            "language": "JavaScript",
             "img": "images/salim-bot.png",
             "bgtl": true
+        },
+        {
+            "name": "My Portfolio",
+            "url": "https://github.com/Leomotors/portfolio-sv",
+            "desc": "This Repository!",
+            "language": "Svelte",
+            "img": "https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?size=626&ext=jpg"
         }
     ],
     "carelessdev": [
         {
             "name": "Harunon",
             "url": "https://github.com/CarelessDev/Harunon",
-            "desc": "Harunon is Discord Bot currently being deployed in our server",
+            "desc": "Harunon is Multipurpose Discord Bot with Music currently being deployed in our server",
+            "language": "Python",
             "img": "https://c.tenor.com/kp-3oTEaTbEAAAAC/haruno-haruno-yukinoshita.gif"
         }
     ],

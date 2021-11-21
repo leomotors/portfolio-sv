@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "1.0.16",
+  "version": "1.0.18",
   "type": "module",
   "scripts": {
     "dev": "yarn lm:inc && yarn lm:config && vite",
@@ -19,19 +19,19 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
     "@tsconfig/svelte": "^2.0.1",
-    "autoprefixer": "^10.3.7",
-    "cssnano": "^5.0.8",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
     "leomotors-automation": "^1.0.1",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.11",
     "postcss-load-config": "^3.1.0",
-    "svelte": "^3.44.0",
-    "svelte-check": "^2.2.7",
+    "svelte": "^3.44.2",
+    "svelte-check": "^2.2.10",
     "svelte-preprocess": "^4.9.8",
-    "tailwindcss": "^2.2.17",
+    "tailwindcss": "^2.2.19",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.4",
-    "vite": "^2.6.10",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14",
     "svelte-router-spa": "^6.0.3"
   }
 }

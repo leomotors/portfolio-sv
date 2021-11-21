@@ -5,3 +5,5 @@
 
 # lm config
 src/config.ts
+
+.vercel
