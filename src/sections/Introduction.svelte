@@ -25,7 +25,7 @@
     <h1 class="font-bold text3-xl">What I mostly do</h1>
     <div class="card-content my-auto">
       <p>C++</p>
-      <p>Discord Bot (discord.js)</p>
+      <p>Discord Bot (discord.js & discord.py)</p>
       <p>Website with Svelte</p>
       <p>Flutter Android App</p>
       <p>💛 Open-Source Projects 💛</p>

@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "type": "module",
   "scripts": {
     "dev": "yarn lm:inc && yarn lm:config && vite",
