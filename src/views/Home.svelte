@@ -2,6 +2,7 @@
   import Introduction from "../sections/Introduction.svelte";
   import LangCard from "../sections/LangCard.svelte";
   import EdHistory from "../sections/EdHistory.svelte";
+  import Awards from "../sections/Awards.svelte";
 </script>
 
 <main class="page-content">
@@ -28,6 +29,8 @@
   </div>
 
   <EdHistory />
+
+  <Awards />
 
   <button
     class="rounded-xl shadow-md bg-blue-200 hover:bg-blue-300 hover:scale-105 transition-transform p-4 mt-8"

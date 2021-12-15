@@ -39,7 +39,7 @@
 <style lang="postcss">
   .navbar .nav-label,
   .nav-menu > a {
-    @apply my-auto font-medium text-lg;
+    @apply my-auto font-medium text-lg select-none;
   }
 
   .gh-tag > a {

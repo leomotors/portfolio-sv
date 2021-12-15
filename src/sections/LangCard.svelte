@@ -30,7 +30,7 @@
       active={active == 1}
       on:titleclick={setActive(1)}
       title="English"
-      subtitle="Competent User"
+      subtitle="Good User"
     >
       This is my secondary Language
     </Accordion>
@@ -42,7 +42,6 @@
       subtitle="JLPT N5"
     >
       <p>2020年12月 合格</p>
-      <p>今年12月はN4を受けに行きます</p>
     </Accordion>
   </div>
   <h2 class="card-footer text-gray-500 px-4 pb-4 text-xs">
