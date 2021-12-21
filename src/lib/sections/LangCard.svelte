@@ -32,7 +32,7 @@
       title="English"
       subtitle="Good User"
     >
-      This is my secondary Language
+      <p>Duolingo English Test 125 (~IELTS 7-7.5)</p>
     </Accordion>
 
     <Accordion
@@ -41,7 +41,7 @@
       title="Japanese"
       subtitle="JLPT N5"
     >
-      <p>2020年12月 合格</p>
+      <p>2020年12月 合格 (パーセンタイル 92.8)</p>
     </Accordion>
   </div>
   <h2 class="card-footer text-gray-500 px-4 pb-4 text-xs">
