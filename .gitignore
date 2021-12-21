@@ -2,6 +2,7 @@
 /dist/
 /.vscode/
 .DS_Store
+.svelte-kit
 
 # lm config
 src/config.ts

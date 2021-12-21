@@ -1,0 +1,51 @@
+{
+    "featured": [
+        {
+            "name": "RTX 2090 TiFy",
+            "url": "https://github.com/Leomotors/RTX-2090-TiFy",
+            "desc": "Meme maker as shown in the GIF, GUI C++ Program with wxWidgets and OpenCV",
+            "language": "C++",
+            "img": "https://github.com/Leomotors/RTX-2090-TiFy/blob/main/assets/linus-example.gif?raw=true"
+        },
+        {
+            "name": "Anime Captcha",
+            "url": "https://github.com/Leomotors/anime-captcha",
+            "desc": "You may have seen Anime Captcha meme, I recreate that in website! available for you to try!",
+            "language": "Svelte",
+            "img": "images/anime-captcha.png",
+            "bgtl": true
+        },
+        {
+            "name": "Salim Bot",
+            "url": "https://github.com/Leomotors/Salim-Bot",
+            "desc": "My First Ever Discord Bot, useless but fun to play with! Currently being deployed in my friend's server",
+            "language": "JavaScript",
+            "img": "images/salim-bot.png",
+            "bgtl": true
+        },
+        {
+            "name": "My Portfolio",
+            "url": "https://github.com/Leomotors/portfolio-sv",
+            "desc": "This Repository!",
+            "language": "Svelte",
+            "img": "https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?size=626&ext=jpg"
+        }
+    ],
+    "carelessdev": [
+        {
+            "name": "Harunon",
+            "url": "https://github.com/CarelessDev/Harunon",
+            "desc": "Harunon is Multipurpose Discord Bot with Music currently being deployed in our server",
+            "language": "Python",
+            "img": "https://c.tenor.com/ceojyowWu0oAAAAC/haruno-yukinoshita-oregairu.gif"
+        }
+    ],
+    "big_projects": [
+        {
+            "name": "Food Busters",
+            "url": "https://github.com/Food-Busters",
+            "desc": "Participated in AIS Jump Thailand Hackathon, Our goal is to make innovation that reduces pollution from food wastes",
+            "img": "https://github.com/Food-Busters/food_busters/blob/main/assets/images/logo_white.jpg?raw=true"
+        }
+    ]
+}
