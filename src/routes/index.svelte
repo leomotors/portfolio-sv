@@ -30,8 +30,6 @@
 
   <EdHistory />
 
-  <Awards />
-
   <button
     class="rounded-xl shadow-md bg-blue-200 hover:bg-blue-300 hover:scale-105 transition-transform p-4 mt-8"
     on:click={() => {
@@ -40,4 +38,6 @@
   >
     <h1 class="font-bold text-4xl select-none">My Projects</h1>
   </button>
+
+  <Awards />
 </main>

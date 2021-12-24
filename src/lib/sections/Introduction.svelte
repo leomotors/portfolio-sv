@@ -12,7 +12,7 @@
         <td> 17 </td>
       </tr>
       <tr>
-        <td> 📜 Year </td>
+        <td> 📜 Grade </td>
         <td> 12 </td>
       </tr>
       <tr>
