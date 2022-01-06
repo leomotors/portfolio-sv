@@ -8,7 +8,7 @@
 <main
   class="repo-card hover:scale-102.5"
   on:click={() => {
-    window.open(repo.url, "_blank");
+    window.open(repo.url, "_blank", "noopener");
   }}
 >
   <div

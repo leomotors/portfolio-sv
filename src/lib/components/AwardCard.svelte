@@ -9,7 +9,7 @@
     class={`img w-full h-56 rounded-t-lg ${award.link ? "cursor-pointer" : ""}`}
     style={`background-image: url(${award.img})`}
     on:click={() => {
-      if (award.link) window.open(award.link, "_blank");
+      if (award.link) window.open(award.link, "_blank", "noopener");
     }}
   />
   <div class="card-detail p-4">

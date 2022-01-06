@@ -18,7 +18,7 @@
           class="card-image w-full h-32 xl:h-40 2xl:h-48 bg-cover bg-center rounded-t hover:cursor-pointer"
           style={`background-image: url("${school.image}")`}
           on:click={() => {
-            school.website && window.open(school.website, "_blank");
+            school.website && window.open(school.website, "_blank", "noopener");
           }}
           title={`Click to go to ${school.name}'s Website`}
         />

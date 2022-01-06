@@ -17,6 +17,7 @@
     <a
       class="nav-label ml-2 hover:text-gray-800"
       target="_blank"
+      rel="noopener"
       href="https://github.com/Leomotors"
       title="Click here to visit my GitHub Profile"
     >

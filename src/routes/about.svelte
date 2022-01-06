@@ -12,11 +12,12 @@
       class="text-blue-500 hover:text-blue-600"
       href="https://github.com/Leomotors/portfolio-sv"
       target="_blank"
+      rel="noopener"
     >
       GitHub
     </a>
   </h1>
-  <h1>Frontend Framework: SvelteKit</h1>
+  <h1>JavaScript Framework: SvelteKit</h1>
   <h1>CSS Framework: Tailwind</h1>
   <h1>PaaS: Vercel</h1>
 </main>
