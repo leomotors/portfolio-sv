@@ -12,7 +12,7 @@
       if (award.link) window.open(award.link, "_blank");
     }}
   />
-  <div class="card-detail p-4 select-none">
+  <div class="card-detail p-4">
     <h1 class="font-bold text-xl">{award.title}</h1>
     <h2>{award.desc}</h2>
   </div>

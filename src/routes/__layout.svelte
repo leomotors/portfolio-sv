@@ -18,15 +18,10 @@
       class="nav-label ml-2 hover:text-gray-800"
       target="_blank"
       href="https://github.com/Leomotors"
+      title="Click here to visit my GitHub Profile"
     >
       <GitHub />
     </a>
-    <span
-      class="TEMPORARY my-auto mx-2 px-1 font-medium text-gray-500 select-none"
-    >
-      <span class="hidden sm:inline md:hidden"> PREVIEW </span>
-      <span class="hidden md:inline"> EARLY PREVIEW: UNDER CONSTRUCTION </span>
-    </span>
   </div>
 
   <div class="nav-menu flex flex-row">
@@ -38,6 +33,7 @@
   </div>
 </main>
 
+<!-- Website Content -->
 <slot />
 
 <style lang="postcss">

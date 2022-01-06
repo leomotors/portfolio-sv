@@ -2,7 +2,8 @@
   import { Version, BuildTime } from "../config";
 </script>
 
-<main class="page-content p-3 sm:p-6 md:p-12 lg:p-24">
+<h1 class="font-bold text-8xl p-12">About Website</h1>
+<main class="page-content p-3 sm:p-6 md:p-12 lg:px-24">
   <h1>Website Version: {Version}</h1>
   <h1>Build Time: {BuildTime}</h1>
   <h1>
@@ -15,8 +16,9 @@
       GitHub
     </a>
   </h1>
-  <h1>Frontend Framework: Svelte + Vite ( + TypeScript)</h1>
+  <h1>Frontend Framework: SvelteKit</h1>
   <h1>CSS Framework: Tailwind</h1>
+  <h1>PaaS: Vercel</h1>
 </main>
 
 <style lang="postcss">
