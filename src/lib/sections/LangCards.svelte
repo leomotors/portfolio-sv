@@ -57,7 +57,7 @@
       <p class="langs">C C++ JavaScript TypeScript Python Dart</p>
       <p>
         List of other Programming Language I ever learned
-        <span class="text-gray-600"> (Some maybe forgotten) </span>
+        <span class="text-gray-600"> (Most likely forgotten) </span>
       </p>
       <p class="langs">C# Java Kotlin Go</p>
       <p>If I say these are Programming Language, it may trigger someone</p>

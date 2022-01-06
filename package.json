@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "2.0.28",
+  "version": "2.0.29",
   "scripts": {
     "dev": "yarn lm:inc && yarn lm:config && svelte-kit dev",
     "build": "yarn lm:config && svelte-kit build",

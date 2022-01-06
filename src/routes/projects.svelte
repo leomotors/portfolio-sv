@@ -68,7 +68,7 @@
   }
 
   .big-card > hr {
-    @apply text-gray-400 mt-2 mb-1 mx-4;
+    @apply text-gray-300 mt-2 mb-1 mx-4;
   }
 
   .big-card > .card-content {

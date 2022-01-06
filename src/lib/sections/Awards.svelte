@@ -9,7 +9,7 @@
 >
   <h1 class="font-bold text-3xl">My Award</h1>
   <h2 class="text-gray-600">Award related to Computer and Technology</h2>
-  <hr class="ml-6 my-2" />
+  <hr class="ml-6 my-2 text-gray-300" />
 
   <div class="card-content">
     {#each awards as award}

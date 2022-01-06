@@ -6,7 +6,7 @@
 
 <div class="award-card hover:scale-102.5 rounded-lg shadow-lg m-4">
   <div
-    class={`img w-full h-56 ${award.link ? "cursor-pointer" : ""}`}
+    class={`img w-full h-56 rounded-t-lg ${award.link ? "cursor-pointer" : ""}`}
     style={`background-image: url(${award.img})`}
     on:click={() => {
       if (award.link) window.open(award.link, "_blank");
