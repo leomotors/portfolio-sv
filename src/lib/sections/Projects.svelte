@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="prog-img bg-no-repeat bg-cover bg-center w-5/6 my-10 mx-auto h-96 rounded-2xl relative"
+  class="prog-img bg-no-repeat bg-cover bg-center w-5/6 my-10 mx-auto h-128 sm:h-96 rounded-2xl relative"
 >
   <blockquote
     class="text-left text-gray-100 font-serif m-3 p-3 w-max-full lg:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute left-4 top-4"

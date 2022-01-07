@@ -3,7 +3,7 @@
 </script>
 
 <main
-  class="introduction-zone w-5/6 py-8 mx-auto mt-8 bg-sky-200 rounded-2xl shadow-xl"
+  class="introduction-zone w-5/6 py-8 px-4 mx-auto mt-8 bg-sky-200 rounded-2xl shadow-xl"
 >
   <h1 class="font-bold text-5xl">&lt;&gt; Hi, I'm Leo! &lt;/&gt;</h1>
   <h1 class="text-3xl text-gray-800">Nutthapat Pongtanyavichai</h1>
@@ -14,7 +14,7 @@
   </h2>
 
   <div
-    class="introduction-cards md:flex md:flex-row justify-around lg:mx-12 mt-5 "
+    class="introduction-cards flex flex-col md:flex-row justify-around items-center lg:mx-12 mt-5"
   >
     <div class="introduction bg-pink-200">
       <h1 class="font-bold text-3xl">About me</h1>
@@ -56,7 +56,7 @@
   }
 
   .introduction-cards > div {
-    @apply w-full md:w-1/2 lg:w-1/3 rounded-xl m-2 hover:scale-105 transition-transform;
+    @apply rounded-xl m-2 hover:scale-105 transition-transform;
   }
 
   table td {

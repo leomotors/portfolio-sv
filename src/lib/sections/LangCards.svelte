@@ -11,7 +11,9 @@
   }
 </script>
 
-<div class="lang-cards flex flex-col lg:flex-row justify-center align-middle">
+<div
+  class="lang-cards flex flex-col lg:flex-row justify-center items-center px-6"
+>
   <div class="lang-card">
     <h1>Language</h1>
     <hr />
@@ -52,7 +54,7 @@
     <h1>Programming Language</h1>
     <hr />
 
-    <div class="card-content p-2 pt-4">
+    <div class="card-content p-2 py-4">
       <p>List of Programming Language I frequently use</p>
       <p class="langs">C C++ JavaScript TypeScript Python Dart</p>
       <p>

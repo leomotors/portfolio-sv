@@ -23,7 +23,7 @@
           title={`Click to go to ${school.name}'s Website`}
         />
         <div class="card-content p-2.5">
-          <h3 class="school-name">{school.name} {school.gen}</h3>
+          <p class="school-name">{school.name} {school.gen}</p>
           <p class="enroll-grad">{school.enroll}-{school.graduate}</p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "2.0.30",
+  "version": "2.0.32",
   "scripts": {
     "dev": "yarn lm:inc && yarn lm:config && svelte-kit dev",
     "build": "yarn lm:config && svelte-kit build",
@@ -24,7 +24,7 @@
     "leomotors-automation": "^1.0.1",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.1",
-    "svelte": "^3.44.3",
+    "svelte": "^3.45.0",
     "svelte-check": "^2.2.11",
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
