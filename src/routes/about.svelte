@@ -2,7 +2,7 @@
   import { Version, BuildTime } from "../config";
 </script>
 
-<h1 class="font-bold text-8xl p-12">About Website</h1>
+<h1 class="page-title p-12">About Website</h1>
 <main class="page-content p-3 sm:p-6 md:p-12 lg:px-24">
   <blockquote>
     <h1>Website Version: {Version}</h1>
@@ -21,9 +21,13 @@
   </blockquote>
 
   <blockquote>
-    <h1>JavaScript Framework: SvelteKit</h1>
+    <h1>JavaScript Framework: SvelteKit with SSR</h1>
     <h1>CSS Framework: Tailwind</h1>
     <h1>PaaS: Vercel</h1>
+    <h1>
+      UI: Manually Built
+      <span class="text-2xl">(No Framework, only Tailwind and Svelte)</span>
+    </h1>
   </blockquote>
 
   <blockquote>
@@ -36,14 +40,14 @@
 
 <style lang="postcss">
   main h1 {
-    @apply text-4xl font-semibold;
+    @apply text-3xl sm:text-4xl font-semibold;
   }
 
   main h2 {
-    @apply text-3xl font-medium;
+    @apply text-2xl sm:text-3xl font-medium;
   }
 
   blockquote {
-    @apply bg-emerald-150 m-4 p-6 rounded-3xl hover:scale-102.5 transition-transform;
+    @apply bg-emerald-150 mx-auto my-4 max-w-full lg:w-2/3 p-6 rounded-3xl hover:scale-102.5 transition-transform;
   }
 </style>

@@ -2,6 +2,7 @@
   import "../app.css";
   import GitHub from "$lib/icons/GitHub.svelte";
 
+  // Dropdown Menu Stuff
   let mouseOnMenu = false;
   let mouseOnDropdown = false;
   let mouseOnMenuTimeout: NodeJS.Timeout = null;
@@ -96,6 +97,10 @@
   .nav-menu > a,
   .dropdown-text {
     @apply my-auto font-medium text-lg select-none;
+  }
+
+  .dropdown-menu > a {
+    @apply select-none;
   }
 
   .nav-menu > a {

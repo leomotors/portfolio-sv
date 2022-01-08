@@ -4,7 +4,7 @@
 </script>
 
 <main class="sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-36">
-  <h1 class="font-bold text-8xl p-12">My Projects</h1>
+  <h1 class="page-title p-12">My Projects</h1>
 
   <!-- Featured GitHub Repositories -->
   <div class="big-card">

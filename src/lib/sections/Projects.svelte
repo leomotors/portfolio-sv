@@ -3,10 +3,10 @@
 </script>
 
 <div
-  class="prog-img bg-no-repeat bg-cover bg-center w-5/6 my-10 mx-auto h-128 sm:h-96 rounded-2xl relative"
+  class="prog-img bg-no-repeat bg-cover bg-center w-5/6 my-10 mx-auto h-160 sm:h-96 rounded-2xl relative"
 >
   <blockquote
-    class="text-left text-gray-100 font-serif m-3 p-3 w-max-full lg:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute left-4 top-4"
+    class="text-left text-gray-100 font-serif m-3 p-3 max-w-full lg:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute sm:left-4 top-4 hover:scale-102.5 transition-transform"
   >
     <span class="quotation-mark">&ldquo;</span>
     <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -16,7 +16,7 @@
     <p class="text-right pr-12">— said me, on my Harvard Application</p>
   </blockquote>
   <button
-    class="m-4 absolute bottom-4 left-4 hover:translate-x-4 transition-all"
+    class="m-4 absolute bottom-4 left-0 sm:left-4 hover:translate-x-4 transition-all"
     on:click={() => {
       window.location.href = "/projects";
     }}

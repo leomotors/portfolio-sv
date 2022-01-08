@@ -18,7 +18,7 @@
   >
     <div class="introduction bg-pink-200">
       <h1 class="font-bold text-3xl">About me</h1>
-      <table class="table-auto w-96 mx-auto">
+      <table class="table-fixed sm:table-auto max-w-full sm:w-96 mx-auto">
         <tr>
           <td> 🚹 Gender </td>
           <td> Male </td>
@@ -60,7 +60,7 @@
   }
 
   table td {
-    @apply text-left lg:text-lg xl:text-xl;
+    @apply text-left lg:text-lg xl:text-xl w-1/2;
   }
   .card-content > p {
     @apply lg:text-lg xl:text-xl;

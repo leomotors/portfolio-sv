@@ -4,5 +4,5 @@
   <span class="text-blue-200">&gt;</span>
   <span class="text-blue-300">&gt;</span>
   <span class="text-blue-400">&gt;</span>
-  <span class="text-blue-500">&gt;</span>
+  <span class="text-blue-500 hidden xl:inline">&gt;</span>
 </div>
