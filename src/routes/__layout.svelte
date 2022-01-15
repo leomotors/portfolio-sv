@@ -18,7 +18,7 @@
 
 <!-- NavBar -->
 <main
-  class="navbar bg-indigo-200 w-full h-12 px-6 flex flex-row align-baseline justify-between relative"
+  class="navbar bg-indigo-200 w-full h-12 px-6 flex flex-row items-center justify-between relative"
 >
   <div class="gh-tag flex flex-row">
     <img
@@ -84,7 +84,7 @@
     }}
   >
     {#each Object.entries(links) as [key, val]}
-      <a href={`/${key}`}>{val}</a>
+      <a class="hover:underline" href={`/${key}`}>{val}</a>
     {/each}
   </div>
 </main>
@@ -93,26 +93,27 @@
 <slot />
 
 <style lang="postcss">
-  .navbar .nav-label,
-  .nav-menu > a,
-  .dropdown-text {
-    @apply my-auto font-medium text-lg select-none;
-  }
-
-  .dropdown-menu > a {
+  * {
     @apply select-none;
-  }
-
-  .nav-menu > a {
-    @apply hidden sm:inline;
-  }
-
-  .nav-menu > a,
-  .dropdown-text {
-    @apply mx-2 px-2 bg-gray-50 rounded hover:bg-gray-100 hover:scale-105 transition-all;
   }
 
   .gh-tag > a {
     @apply hover:scale-102.5 transition-transform;
+  }
+
+  /* Text Stuff */
+  .gh-tag > a,
+  .nav-menu > a,
+  .dropdown-text {
+    @apply my-auto font-medium text-lg;
+  }
+
+  /* Dropdown Menu Stuff */
+  .nav-menu > a {
+    @apply hidden sm:inline;
+  }
+  .nav-menu > a,
+  .dropdown-text {
+    @apply mx-2 px-2 bg-gray-50 rounded hover:bg-gray-100 hover:scale-105 transition-all;
   }
 </style>

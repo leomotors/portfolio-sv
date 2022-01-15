@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
+
   import * as Quotes from "$lib/data/amazingQuotes.json";
 </script>
 
@@ -18,7 +20,7 @@
   <button
     class="m-4 absolute bottom-4 left-0 sm:left-4 hover:translate-x-4 transition-all"
     on:click={() => {
-      window.location.href = "/projects";
+      goto("/projects");
     }}
   >
     <h1 class="font-bold text-4xl select-none text-white hover:text-gray-200">
