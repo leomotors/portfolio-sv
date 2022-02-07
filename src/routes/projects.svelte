@@ -10,8 +10,8 @@
   <div class="big-card">
     <h1>Featured GitHub Repositories</h1>
     <h2>
-      Some of Amazing projects I have done and is available on my main account
-      repositories
+      Some of Amazing projects I have done and is available on my individual
+      GitHub Account
     </h2>
     <hr />
     <div class="card-content">

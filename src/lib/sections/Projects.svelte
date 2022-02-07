@@ -6,6 +6,7 @@
 
 <div
   class="prog-img bg-no-repeat bg-cover bg-center w-5/6 my-10 mx-auto h-160 sm:h-96 rounded-2xl relative"
+  style="background-image: url(images/coding-bg.webp)"
 >
   <blockquote
     class="text-left text-gray-100 font-serif m-3 p-3 max-w-full lg:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute sm:left-4 top-4 hover:scale-102.5 transition-transform"
@@ -34,10 +35,6 @@
 </div>
 
 <style lang="postcss">
-  .prog-img {
-    background-image: url("./images/coding-bg.png");
-  }
-
   .quotation-mark {
     @apply absolute text-emerald-400 text-4xl xl:text-5xl select-none;
   }

@@ -12,7 +12,7 @@
             "url": "https://github.com/Leomotors/anime-captcha",
             "desc": "You may have seen Anime Captcha meme, I recreate that in website! available for you to try!",
             "language": "Svelte",
-            "img": "images/anime-captcha.png",
+            "img": "images/anime-captcha.webp",
             "bgtl": true
         },
         {
@@ -20,7 +20,7 @@
             "url": "https://github.com/Leomotors/Salim-Bot",
             "desc": "My First Ever Discord Bot, useless but fun to play with! Currently being deployed in my friend's server",
             "language": "JavaScript",
-            "img": "images/salim-bot.png",
+            "img": "images/salim-bot.webp",
             "bgtl": true
         },
         {
@@ -29,6 +29,20 @@
             "desc": "This Repository!",
             "language": "Svelte",
             "img": "https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?size=626&ext=jpg"
+        },
+        {
+            "name": "Cocoa Grader",
+            "url": "https://github.com/Leomotors/cocoa-grader",
+            "desc": "A Discord Bot Grader, more specifically, 'Waifu Discord Bot'",
+            "language": "TypeScript",
+            "img": "images/cocoa-grader.webp"
+        },
+        {
+            "name": "Simple RLC Calculator",
+            "url": "https://github.com/Leomotors/Simple-RLC-Calculator",
+            "desc": "Simple RLC Calculator with Visualization & GUI, (Not) Enough for High School Exam Topics, Made with pygame",
+            "language": "Python",
+            "img": "images/RLC.webp"
         }
     ],
     "carelessdev": [

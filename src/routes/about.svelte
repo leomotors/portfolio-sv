@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { BuildTime } from "../config";
+  import { Version, BuildTime } from "../config";
 </script>
 
 <h1 class="page-title p-12">About Website</h1>
 <main class="page-content p-3 sm:p-6 md:p-12 lg:px-24">
   <blockquote>
+    <h1>Website Version: {Version}</h1>
     <h1>Built At: {BuildTime}</h1>
     <h1>
       Source Code of this Website is available on

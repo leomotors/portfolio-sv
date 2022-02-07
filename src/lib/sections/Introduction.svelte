@@ -1,23 +1,51 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
+  import GLOBE from "vanta/dist/vanta.globe.min";
+
+  let vantaEffect, vantaRef: HTMLElement;
+  onMount(() => {
+    vantaEffect = GLOBE({
+      el: vantaRef,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+    });
+
+    return () => {
+      vantaEffect.destroy();
+    };
+  });
+
   export let data;
 </script>
 
 <main
-  class="introduction-zone w-5/6 py-8 px-4 mx-auto mt-8 bg-sky-200 rounded-2xl shadow-xl"
+  class="introduction-zone max-w-full py-8 pb-4 shadow-xl"
+  bind:this={vantaRef}
 >
-  <h1 class="font-bold text-5xl">&lt;&gt; Hi, I'm Leo! &lt;/&gt;</h1>
-  <h1 class="text-3xl text-gray-800">Nutthapat Pongtanyavichai</h1>
-  <h1 class="text-2xl" title="This is from my GitHub Bio">{data.bio}</h1>
-  <h2 class="text-xl">
-    GitHub: {data.public_repos} Public Repositories {data.followers} followers {data.following}
-    following
-  </h2>
+  <div
+    class="head-text-box max-w-full lg:w-1/2 2xl:w-1/3 mx-auto rounded-xl py-4"
+  >
+    <h1 class="font-bold text-5xl">&lt;&gt; Hi, I'm Leo! &lt;/&gt;</h1>
+    <h1 class="text-3xl text-gray-200">Nutthapat Pongtanyavichai</h1>
+    <h1 class="text-2xl" title="This is from my GitHub Bio">{data.bio}</h1>
+    <h2 class="text-xl">
+      GitHub: {data.public_repos} Public Repositories {data.followers} followers
+      {data.following}
+      following
+    </h2>
+  </div>
 
   <div
     class="introduction-cards flex flex-col md:flex-row justify-around items-center lg:mx-12 mt-5"
   >
     <div class="introduction bg-pink-200">
-      <h1 class="font-bold text-3xl">About me</h1>
+      <h1 class="font-bold text-3xl mb-4">About me</h1>
       <table class="table-fixed sm:table-auto max-w-full sm:w-96 mx-auto">
         <tr>
           <td> 🚹 Gender </td>
@@ -33,7 +61,7 @@
         </tr>
         <tr>
           <td> 🏫 School </td>
-          <td> Triam Udom Suksa School </td>
+          <td> Triam Udom Suksa </td>
         </tr>
       </table>
     </div>
@@ -41,7 +69,7 @@
       <h1 class="font-bold text-3xl">What I mostly do</h1>
       <div class="card-content my-auto">
         <p>C++</p>
-        <p>Discord Bot (discord.js & discord.py)</p>
+        <p>Discord Bot (discord.js)</p>
         <p>Website with Svelte</p>
         <p>Flutter Android App</p>
         <p>💛 Open-Source Projects 💛</p>
@@ -51,8 +79,21 @@
 </main>
 
 <style lang="postcss">
+  main {
+    background-color: #23153c;
+  }
+
+  .head-text-box {
+    background-color: rgba(24, 24, 24, 0.6);
+    @apply text-white;
+  }
+
+  .head-text-box > * {
+    @apply my-1.5;
+  }
+
   .introduction {
-    @apply py-6 px-3 flex flex-col align-middle shadow-xl;
+    @apply py-6 px-3 flex flex-col align-middle shadow-xl max-w-full lg:w-1/2 xl:w-1/4;
   }
 
   .introduction-cards > div {
