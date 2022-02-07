@@ -15,7 +15,7 @@
     {Quotes.harvard}
     <span class="nbsp">&nbsp;</span>
     <span class="quotation-mark">&rdquo;</span>
-    <p class="text-right pr-12">— said me, on my Harvard Application</p>
+    <p class="text-right pr-12">— said me, on one of my University App Essay</p>
   </blockquote>
   <button
     class="m-4 absolute bottom-4 left-0 sm:left-4 hover:translate-x-4 transition-all"
@@ -35,7 +35,7 @@
 
 <style lang="postcss">
   .prog-img {
-    background-image: url("https://networks.imdea.org/wp-content/uploads/2021/09/media-file-code-900x500.png");
+    background-image: url("./images/coding-bg.png");
   }
 
   .quotation-mark {
