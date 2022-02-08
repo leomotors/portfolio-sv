@@ -7,7 +7,7 @@
             "enroll": 2016,
             "graduate": 2019,
             "gpax": 3.88,
-            "image": "https://readthecloud.co/wp-content/uploads/2019/08/museum-assumption-3-750x500.jpg",
+            "image": "images/assumption.webp",
             "website": "https://www.assumption.ac.th/"
         },
         {
@@ -17,7 +17,7 @@
             "enroll": 2019,
             "graduate": 2022,
             "gpax": 3.94,
-            "image": "https://teen.mthai.com/app/uploads/2018/03/page-1-4.jpg",
+            "image": "images/triamudom.webp",
             "website": "https://www.triamudom.ac.th/website/"
         },
         {
@@ -26,7 +26,7 @@
             "level": "Undergraduate",
             "enroll": 2022,
             "graduate": 2026,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Noun_Project_question_mark_icon_1101884_cc.svg/1200px-Noun_Project_question_mark_icon_1101884_cc.svg.png",
+            "image": "images/idk.webp",
             "website": "https://www.chula.ac.th/"
         }
     ]
