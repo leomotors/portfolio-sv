@@ -8,3 +8,4 @@
 src/config.ts
 
 .vercel
+.vercel_build_output

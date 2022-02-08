@@ -24,7 +24,13 @@
         />
         <div class="card-content p-2.5">
           <p class="school-name">{school.name} {school.gen}</p>
-          <p class="enroll-grad">{school.enroll}-{school.graduate}</p>
+          <p class="enroll-grad">
+            {school.level},
+            {school.enroll}-{school.graduate}
+          </p>
+          {#if school.gpax}
+            <p class="school-gpax font-bold">GPAX: {school.gpax}</p>
+          {/if}
         </div>
       </div>
 

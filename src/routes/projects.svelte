@@ -1,77 +1,45 @@
 <script lang="ts">
   import RepoCard from "$lib/components/RepoCard.svelte";
+  import BigCard from "$lib/components/BigCard.svelte";
+
   import { featured, carelessdev, big_projects } from "$lib/data/repos.json";
 </script>
 
-<main class="sm:mx-4 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-36">
-  <h1 class="page-title p-12">My Projects</h1>
+<main class="card-page">
+  <h1 class="page-title">My Projects</h1>
+  <h2 class="page-subtitle">
+    Projects related to Programming and Technology I have done
+  </h2>
 
   <!-- Featured GitHub Repositories -->
-  <div class="big-card">
-    <h1>Featured GitHub Repositories</h1>
-    <h2>
-      Some of Amazing projects I have done and is available on my individual
-      GitHub Account
-    </h2>
-    <hr />
-    <div class="card-content">
-      {#each featured as repo}
-        <RepoCard {repo} />
-      {/each}
-    </div>
-  </div>
+  <BigCard
+    title="Featured GitHub Repositories"
+    subtitle="Some of Amazing projects I have done and is available on my individual
+  GitHub Account"
+  >
+    {#each featured as repo}
+      <RepoCard {repo} />
+    {/each}
+  </BigCard>
 
   <!-- CarelessDev -->
-  <div class="big-card">
-    <h1>CarelessDev</h1>
-    <h2>
-      CarelessDev is where my friends and I spend time creating useless stuff,
-      below is projects I have contributed to
-    </h2>
-    <hr />
-    <div class="card-content">
-      {#each carelessdev as repo}
-        <RepoCard {repo} />
-      {/each}
-    </div>
-  </div>
+  <BigCard
+    title="CarelessDev"
+    subtitle="CarelessDev is where my friends and I spend time creating useless stuff,
+  below is projects I have contributed to"
+  >
+    {#each carelessdev as repo}
+      <RepoCard {repo} />
+    {/each}
+  </BigCard>
 
   <!-- Other Big Projects -->
-  <div class="big-card">
-    <h1>Other Big Projects</h1>
-    <h2>Some Big Projects I have spend lots of time with</h2>
-    <hr />
-    <div class="card-content">
-      {#each big_projects as repo}
-        <RepoCard {repo} />
-      {/each}
-    </div>
-  </div>
+  <BigCard
+    title="Other Big Projects"
+    subtitle="Some Big Projects I have spend lots of time with"
+  >
+    {#each big_projects as repo}
+      <RepoCard {repo} />
+    {/each}
+  </BigCard>
 </main>
-
-<style lang="postcss">
-  .big-card {
-    @apply m-4 p-4 max-w-full rounded-xl bg-white shadow-lg;
-  }
-
-  .big-card > h1 {
-    @apply text-3xl font-bold text-left;
-  }
-
-  .big-card > h2 {
-    @apply text-left text-gray-600;
-  }
-
-  .big-card > h1,
-  .big-card > h2 {
-    @apply ml-6;
-  }
-
-  .big-card > hr {
-    @apply text-gray-300 mt-2 mb-1 mx-4;
-  }
-
-  .big-card > .card-content {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
-  }
-</style>

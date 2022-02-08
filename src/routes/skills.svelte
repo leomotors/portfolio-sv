@@ -1,1 +1,1 @@
-<h1 class="page-title p-12">Coming Soon</h1>
+<h1 class="page-title">Coming Soon</h1>

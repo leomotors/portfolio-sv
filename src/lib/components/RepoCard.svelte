@@ -3,6 +3,8 @@
   import LangIcons from "$lib/data/lang_icons.json";
 
   export let repo: Repo;
+
+  const lang = LangIcons[repo.language];
 </script>
 
 <main
@@ -15,10 +17,9 @@
     class={`img w-full h-56 ${repo.bgtl ? "bgtl" : ""}`}
     style={`background-image: url(${repo.img})`}
   >
-    <div
-      class="lang-icon"
-      style={`background-image: url(${LangIcons[repo.language]})`}
-    />
+    {#if lang}
+      <div class="lang-icon" style={`background-image: url(${lang})`} />
+    {/if}
   </div>
   <div class="card-detail">
     <h1 class="font-bold text-xl">{repo.name}</h1>

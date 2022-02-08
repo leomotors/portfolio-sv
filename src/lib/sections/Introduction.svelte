@@ -3,17 +3,17 @@
 
   import GLOBE from "vanta/dist/vanta.globe.min";
 
-  let vantaEffect, vantaRef: HTMLElement;
+  let vantaRef: HTMLElement;
   onMount(() => {
-    vantaEffect = GLOBE({
+    const vantaEffect = GLOBE({
       el: vantaRef,
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
+      backgroundColor: 0xe9e9ff, // Chino
+      color: 0xefa486, // Cocoa
     });
 
     return () => {
@@ -25,7 +25,7 @@
 </script>
 
 <main
-  class="introduction-zone max-w-full py-8 pb-4 shadow-xl"
+  class="introduction-zone max-w-full py-8 pb-4 shadow-xl relative"
   bind:this={vantaRef}
 >
   <div
@@ -46,7 +46,7 @@
   >
     <div class="introduction bg-pink-200">
       <h1 class="font-bold text-3xl mb-4">About me</h1>
-      <table class="table-fixed sm:table-auto max-w-full sm:w-96 mx-auto">
+      <table class="table-auto max-w-full sm:w-96 mx-auto">
         <tr>
           <td> 🚹 Gender </td>
           <td> Male </td>
@@ -61,7 +61,7 @@
         </tr>
         <tr>
           <td> 🏫 School </td>
-          <td> Triam Udom Suksa </td>
+          <td> Triam Udom Suksa School (Pending Graduation)</td>
         </tr>
       </table>
     </div>
@@ -76,11 +76,23 @@
       </div>
     </div>
   </div>
+
+  <div class="vanta-credit credit-text">
+    3D Globe by
+    <a
+      class="hover:text-slate-500"
+      href="https://www.vantajs.com/"
+      target="_blank"
+      rel="noopener"
+    >
+      Vanta.js
+    </a>
+  </div>
 </main>
 
 <style lang="postcss">
   main {
-    background-color: #23153c;
+    background-color: #e9e9ff;
   }
 
   .head-text-box {
@@ -101,9 +113,22 @@
   }
 
   table td {
-    @apply text-left lg:text-lg xl:text-xl w-1/2;
+    @apply text-left lg:text-lg xl:text-xl;
   }
+
+  td:first-child {
+    @apply w-1/3;
+  }
+
+  td:last-child {
+    @apply w-2/3;
+  }
+
   .card-content > p {
     @apply lg:text-lg xl:text-xl;
+  }
+
+  .vanta-credit {
+    @apply text-slate-800 !important;
   }
 </style>

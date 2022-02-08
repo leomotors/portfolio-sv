@@ -4,8 +4,8 @@
   import * as Quotes from "$lib/data/amazingQuotes.json";
 </script>
 
-<div
-  class="prog-img bg-no-repeat bg-cover bg-center w-5/6 my-10 mx-auto h-160 sm:h-96 rounded-2xl relative"
+<main
+  class="big-picture-card"
   style="background-image: url(images/coding-bg.webp)"
 >
   <blockquote
@@ -19,20 +19,16 @@
     <p class="text-right pr-12">— said me, on one of my University App Essay</p>
   </blockquote>
   <button
-    class="m-4 absolute bottom-4 left-0 sm:left-4 hover:translate-x-4 transition-all"
+    class="big-picture-nav"
     on:click={() => {
       goto("/projects");
     }}
   >
-    <h1 class="font-bold text-4xl select-none text-white hover:text-gray-200">
-      My Projects >>>
-    </h1>
+    <h1>My Projects >>></h1>
   </button>
 
-  <p class="absolute bottom-3 right-6 text-slate-200 xl:text-xl select-none">
-    Picture by IMDEA Network
-  </p>
-</div>
+  <p class="credit-text">Picture by IMDEA Network</p>
+</main>
 
 <style lang="postcss">
   .quotation-mark {

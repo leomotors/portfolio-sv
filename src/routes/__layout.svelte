@@ -1,5 +1,8 @@
 <script lang="ts">
-  import "../app.css";
+  import "../app.postcss";
+  import "$lib/styles/global.postcss";
+  import "$lib/styles/cardpage.postcss";
+
   import GitHub from "$lib/icons/GitHub.svelte";
 
   // Dropdown Menu Stuff
@@ -11,6 +14,7 @@
 
   const links = {
     skills: "Skills",
+    activities: "Activities",
     projects: "Projects",
     about: "About Website",
   };
@@ -18,7 +22,7 @@
 
 <!-- NavBar -->
 <main
-  class="navbar bg-indigo-200 w-full h-12 px-6 flex flex-row items-center justify-between relative"
+  class="navbar bg-indigo-200 w-full h-12 px-6 flex flex-row items-center justify-between relative z-10"
 >
   <div class="gh-tag flex flex-row">
     <img
@@ -39,10 +43,12 @@
   </div>
 
   <!-- Navigation Menu, Unfold on big screen, Dropdown menu on small screen -->
-  <div class="nav-menu flex flex-row z-10">
+  <div class="nav-menu flex flex-row">
+    <!-- Full Menu on Big Screen -->
     {#each Object.entries(links) as [key, val]}
       <a href={`/${key}`}>{val}</a>
     {/each}
+    <!-- Short Menu that spawns dropdown -->
     <p
       class="dropdown-text inline sm:hidden"
       on:mouseenter={() => {
@@ -67,11 +73,11 @@
   </div>
 
   <div
-    class={`dropdown-menu absolute right-0 top-0 p-4 bg-white rounded ${
+    class={`dropdown-menu absolute right-0.5 top-0 p-4 bg-white rounded ${
       forcedOpen || mouseOnMenu || mouseOnDropdown
-        ? "translate-y-10"
+        ? "translate-y-10 opacity-90"
         : "opacity-0 pointer-events-none"
-    } transition-all flex flex-col hover:scale-102.5 sm:hidden`}
+    } transition-all flex flex-col hover:scale-102.5 sm:hidden shadow-xl`}
     on:mouseenter={() => {
       mouseOnDropdown = true;
       clearTimeout(mouseOnDropdownTimeout);
