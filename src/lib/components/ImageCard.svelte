@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { CardData } from "$lib/data/card.model";
+  import type { ImageCardData } from "$lib/data/imagecard.model";
 
-  export let data: CardData;
+  export let data: ImageCardData;
 </script>
 
 <div class="card hover:scale-102.5 rounded-lg shadow-lg m-4">
