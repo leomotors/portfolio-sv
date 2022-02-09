@@ -8,9 +8,9 @@
   width="16"
   height="16"
   fill="currentColor"
-  class={`bi bi-chevron-down transition-all duration-500 my-auto${
-    open ? " -rotate-90" : ""
-  }`}
+  class="bi bi-chevron-down transition-all duration-500 my-auto {open
+    ? ' -rotate-90'
+    : ''}"
   viewBox="0 0 16 16"
 >
   <path

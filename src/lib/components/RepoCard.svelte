@@ -11,7 +11,7 @@
 
 <ImageCard {data}>
   {#if lang}
-    <div class="lang-icon" style={`background-image: url(${lang})`} />
+    <div class="lang-icon" style="background-image: url({lang})" />
   {/if}
 </ImageCard>
 

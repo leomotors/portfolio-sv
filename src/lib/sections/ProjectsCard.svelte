@@ -13,7 +13,7 @@
   >
     <span class="quotation-mark">&ldquo;</span>
     <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    {Quotes.harvard}
+    <span>{Quotes.harvard}</span>
     <span class="nbsp">&nbsp;</span>
     <span class="quotation-mark">&rdquo;</span>
     <p class="text-right pr-12">— said me, on one of my University App Essay</p>

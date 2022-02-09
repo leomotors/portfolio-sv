@@ -12,9 +12,9 @@
 </script>
 
 <div
-  class={`title m-2 px-2 flex flex-row justify-between align-baseline ${
-    active ? "ring-2" : "not-active"
-  } rounded cursor-pointer`}
+  class="title m-2 px-2 flex flex-row justify-between align-baseline {active
+    ? 'ring-2'
+    : 'not-active'} rounded cursor-pointer"
   on:click={() => {
     dispatch("titleclick");
   }}

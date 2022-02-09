@@ -6,10 +6,10 @@
 
 <div class="card hover:scale-102.5 rounded-lg shadow-lg m-4">
   <div
-    class={`img ${data.link ? "cursor-pointer" : ""} ${
-      data.bgtl ? "bg-left-top" : "bg-center"
-    }`}
-    style={`background-image: url(${data.img})`}
+    class="img {data.link ? 'cursor-pointer' : ''} {data.bgtl
+      ? 'bg-left-top'
+      : 'bg-center'}"
+    style="background-image: url({data.img})"
     on:click={data.link &&
       (() => {
         window.open(data.link, "_blank", "noopener");

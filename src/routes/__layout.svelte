@@ -47,7 +47,7 @@
   <div class="nav-menu flex flex-row">
     <!-- Full Menu on Big Screen -->
     {#each Object.entries(links) as [key, val]}
-      <a href={`/${key}`}>{val}</a>
+      <a href="/{key}">{val}</a>
     {/each}
     <!-- Short Menu that spawns dropdown -->
     <p
@@ -74,11 +74,11 @@
   </div>
 
   <div
-    class={`dropdown-menu absolute right-0.5 top-0 p-4 bg-white rounded ${
-      forcedOpen || mouseOnMenu || mouseOnDropdown
-        ? "translate-y-10 opacity-90"
-        : "opacity-0 pointer-events-none"
-    } transition-all flex flex-col hover:scale-102.5 md:hidden shadow-xl`}
+    class="dropdown-menu absolute right-0.5 top-0 p-4 bg-white rounded {forcedOpen ||
+    mouseOnMenu ||
+    mouseOnDropdown
+      ? 'translate-y-10 opacity-90'
+      : 'opacity-0 pointer-events-none'} transition-all flex flex-col hover:scale-102.5 md:hidden shadow-xl"
     on:mouseenter={() => {
       mouseOnDropdown = true;
       clearTimeout(mouseOnDropdownTimeout);
@@ -91,7 +91,7 @@
     }}
   >
     {#each Object.entries(links) as [key, val]}
-      <a class="hover:underline" href={`/${key}`}>{val}</a>
+      <a class="hover:underline" href="/{key}">{val}</a>
     {/each}
   </div>
 </main>
