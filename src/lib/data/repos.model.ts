@@ -1,8 +1,5 @@
-export interface Repo {
-  name: string;
-  url: string;
-  desc: string;
+import type { CardData } from "./card.model";
+
+export interface RepoData extends CardData {
   language?: string;
-  img: string;
-  bgtl?: boolean;
 }

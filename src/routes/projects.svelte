@@ -1,6 +1,6 @@
 <script lang="ts">
-  import RepoCard from "$lib/components/RepoCard.svelte";
   import BigCard from "$lib/components/BigCard.svelte";
+  import RepoCard from "$lib/components/RepoCard.svelte";
 
   import { featured, carelessdev, big_projects } from "$lib/data/repos.json";
 </script>
@@ -17,8 +17,26 @@
     subtitle="Some of Amazing projects I have done and is available on my individual
   GitHub Account"
   >
+    <p slot="card-footer" class="text-left ml-6">
+      For all of my repositories, you may visit my
+      <a
+        href="https://github.com/Leomotors?tab=repositories"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub Account
+      </a>
+      or
+      <a
+        href="https://leomotors-repos.vercel.app/"
+        target="_blank"
+        rel="noopener"
+      >
+        this website
+      </a>
+    </p>
     {#each featured as repo}
-      <RepoCard {repo} />
+      <RepoCard data={repo} />
     {/each}
   </BigCard>
 
@@ -29,7 +47,7 @@
   below is projects I have contributed to"
   >
     {#each carelessdev as repo}
-      <RepoCard {repo} />
+      <RepoCard data={repo} />
     {/each}
   </BigCard>
 
@@ -39,7 +57,13 @@
     subtitle="Some Big Projects I have spend lots of time with"
   >
     {#each big_projects as repo}
-      <RepoCard {repo} />
+      <RepoCard data={repo} />
     {/each}
   </BigCard>
 </main>
+
+<style lang="postcss">
+  a {
+    @apply text-blue-700 hover:text-pink-600;
+  }
+</style>

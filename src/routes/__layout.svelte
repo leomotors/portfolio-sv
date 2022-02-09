@@ -13,6 +13,7 @@
   let forcedOpen = false;
 
   const links = {
+    blog: "Blog",
     skills: "Skills",
     activities: "Activities",
     projects: "Projects",
@@ -30,9 +31,9 @@
       src="https://avatars.githubusercontent.com/u/59821765?v=4"
       alt="My GitHub Profile Pic"
     />
-    <a class="nav-label ml-2 hover:text-gray-800" href="/"> Leomotors </a>
+    <a class="nav-label" href="/"> Leomotors </a>
     <a
-      class="nav-label ml-2 hover:text-gray-800"
+      class="nav-label"
       target="_blank"
       rel="noopener"
       href="https://github.com/Leomotors"
@@ -50,7 +51,7 @@
     {/each}
     <!-- Short Menu that spawns dropdown -->
     <p
-      class="dropdown-text inline sm:hidden"
+      class="dropdown-text inline md:hidden"
       on:mouseenter={() => {
         mouseOnMenu = true;
         clearTimeout(mouseOnMenuTimeout);
@@ -77,7 +78,7 @@
       forcedOpen || mouseOnMenu || mouseOnDropdown
         ? "translate-y-10 opacity-90"
         : "opacity-0 pointer-events-none"
-    } transition-all flex flex-col hover:scale-102.5 sm:hidden shadow-xl`}
+    } transition-all flex flex-col hover:scale-102.5 md:hidden shadow-xl`}
     on:mouseenter={() => {
       mouseOnDropdown = true;
       clearTimeout(mouseOnDropdownTimeout);
@@ -103,6 +104,10 @@
     @apply select-none;
   }
 
+  .nav-label {
+    @apply ml-2 hover:text-gray-800;
+  }
+
   .gh-tag > a {
     @apply hover:scale-102.5 transition-transform;
   }
@@ -116,7 +121,7 @@
 
   /* Dropdown Menu Stuff */
   .nav-menu > a {
-    @apply hidden sm:inline;
+    @apply hidden md:inline;
   }
   .nav-menu > a,
   .dropdown-text {

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { awards } from "$lib/data/awards.json";
 
-  import AwardCard from "$lib/components/AwardCard.svelte";
   import BigCard from "$lib/components/BigCard.svelte";
+  import ImageCard from "$lib/components/ImageCard.svelte";
 </script>
 
 <main class="card-page">
@@ -10,7 +10,7 @@
 
   <BigCard title="Awards" subtitle="Awards related to Computer and Technology">
     {#each awards as award}
-      <AwardCard {award} />
+      <ImageCard data={award} />
     {/each}
   </BigCard>
 
