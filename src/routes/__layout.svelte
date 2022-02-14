@@ -1,9 +1,32 @@
+<script context="module" lang="ts">
+  import type { Load } from "@sveltejs/kit";
+  import { GitHubProfileStatus } from "github-profile-status";
+  import { emojify } from "node-emoji";
+
+  export const load: Load = async () => {
+    const profileStatus = new GitHubProfileStatus({
+      token: import.meta.env.VITE_GITHUB_ACCESS_TOKEN as string,
+    });
+    const status = await profileStatus.get();
+
+    return {
+      props: {
+        status: `${status?.emoji ? `${emojify(status.emoji)}` : ""} ${
+          status?.message ?? ""
+        }`,
+      },
+    };
+  };
+</script>
+
 <script lang="ts">
   import "../app.css";
   import "$lib/styles/global.postcss";
   import "$lib/styles/cardpage.postcss";
 
   import GitHub from "$lib/icons/GitHub.svelte";
+
+  import { shorten } from "$lib/utils";
 
   // Dropdown Menu Stuff
   let mouseOnMenu = false;
@@ -19,6 +42,8 @@
     projects: "Projects",
     about: "About Website",
   };
+
+  export let status: string;
 </script>
 
 <!-- NavBar -->
@@ -41,6 +66,20 @@
     >
       <GitHub />
     </a>
+    {#if status}
+      <span
+        class="ml-2 hidden lg:inline xl:hidden text-gray-700"
+        title={status}
+      >
+        {shorten(status, 36)}
+      </span>
+      <span
+        class="ml-2 hidden xl:inline text-gray-700"
+        title="My Current GitHub Status"
+      >
+        {status}
+      </span>
+    {/if}
   </div>
 
   <!-- Navigation Menu, Unfold on big screen, Dropdown menu on small screen -->
@@ -114,6 +153,7 @@
 
   /* Text Stuff */
   .gh-tag > a,
+  .gh-tag > span,
   .nav-menu > a,
   .dropdown-text {
     @apply my-auto font-medium text-lg;

@@ -4,6 +4,7 @@
   export const load: Load = async ({ fetch }) => {
     const res = await fetch("https://api.github.com/users/Leomotors");
     const data = await res.json();
+
     return {
       props: { githubData: data },
     };

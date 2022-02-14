@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "2.0.70",
+  "version": "2.0.72",
   "type": "module",
   "license": "MIT",
   "author": "Leomotors",
@@ -21,28 +21,31 @@
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
     "@types/marked": "^4.0.2",
+    "@types/node-emoji": "^1.8.1",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
     "autoprefixer": "^10.4.2",
     "cssnano": "^5.0.17",
-    "eslint": "^8.8.0",
+    "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.4.0",
     "leomotors-automation": "^3.0.0",
     "marked": "^4.0.12",
     "postcss": "^8.4.6",
-    "postcss-load-config": "^3.1.1",
+    "postcss-load-config": "^3.1.3",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.6.0",
     "svelte": "^3.46.4",
     "svelte-check": "^2.4.3",
-    "svelte-preprocess": "^4.10.2",
-    "tailwindcss": "^3.0.19",
+    "svelte-preprocess": "^4.10.3",
+    "tailwindcss": "^3.0.22",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5",
-    "vite": "^2.8.0"
+    "vite": "^2.8.2"
   },
   "dependencies": {
+    "github-profile-status": "^1.0.0",
+    "node-emoji": "^1.11.0",
     "vanta": "^0.5.21"
   }
 }
