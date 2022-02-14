@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
   import type { Load } from "@sveltejs/kit";
   import { GitHubProfileStatus } from "github-profile-status";
-  import { emojify } from "node-emoji";
+  import emoji from "node-emoji";
 
   export const load: Load = async () => {
     const profileStatus = new GitHubProfileStatus({
@@ -11,7 +11,7 @@
 
     return {
       props: {
-        status: `${status?.emoji ? `${emojify(status.emoji)}` : ""} ${
+        status: `${status?.emoji ? `${emoji.emojify(status.emoji)}` : ""} ${
           status?.message ?? ""
         }`,
       },
