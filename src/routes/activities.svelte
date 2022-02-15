@@ -16,8 +16,8 @@
 
   <BigCard
     title="Activities"
-    subtitle="Activities related to Computer and Technology, ex. Joining Competition/Contest"
+    subtitle="Activities related to Computer and Technology, ex. Joining Competition / Contest"
   >
-    <h1 class="text-6xl">Coming Soon</h1>
+    <h1 class="text-6xl py-8 ml-4">Coming Soon</h1>
   </BigCard>
 </main>

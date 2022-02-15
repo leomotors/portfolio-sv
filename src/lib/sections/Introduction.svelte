@@ -105,7 +105,7 @@
   }
 
   .introduction {
-    @apply py-6 px-3 flex flex-col align-middle shadow-xl max-w-full lg:w-1/2 xl:w-1/4;
+    @apply py-6 px-3 flex flex-col align-middle shadow-xl max-w-full lg:w-1/2 xl:w-1/3 2xl:w-1/4;
   }
 
   .introduction-cards > div {

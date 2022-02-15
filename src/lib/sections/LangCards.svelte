@@ -70,7 +70,7 @@
 
 <style lang="postcss">
   .lang-card {
-    @apply shadow-lg w-full md:w-2/3 xl:w-1/3 bg-white rounded-lg m-12 hover:scale-105 transition-transform;
+    @apply shadow-lg w-full md:w-2/3 xl:w-2/5 2xl:w-1/3 bg-white rounded-lg m-12 hover:scale-105 transition-transform;
   }
 
   .lang-card > h1 {

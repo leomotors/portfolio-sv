@@ -8,33 +8,35 @@
 </script>
 
 <script lang="ts">
-  import "$lib/styles/markdown.css";
-
+  // import "$lib/styles/markdown.css";
   import { marked } from "marked";
-
   import posts from "$posts";
 
   export let postName: string;
 </script>
 
-<h1 class="page-title text-rose-600">UNDER CONSTRUCTION</h1>
-<main class="flex flex-row gap-4 p-4">
-  <aside>
-    <div class="aside-content">
-      <a href="/blog">See all posts</a>
-      <h1 class="text-4xl font-bold">Content</h1>
-      <ul>
+<h1 class="page-title">Under Construction</h1>
+<main class="flex flex-row gap-4 p-4 mt-8">
+  <aside class="w-1/3">
+    <div class="aside-content p-4 rounded-xl">
+      <a href="/blog" class="font-medium text-xl">See all posts</a>
+      <h1 class="text-4xl font-bold">Contents</h1>
+      <ul class="my-3">
         {#each Object.keys(posts) as postKey}
-          <li>
-            <a href="/blog/{postKey}">{posts[postKey].title}</a>
+          {@const post = posts[postKey]}
+          <li class="hover:text-gray-600">
+            <a href="/blog/{postKey}">{post.title} | {post.date}</a>
           </li>
         {/each}
       </ul>
     </div>
   </aside>
-  <div class="markdown bg-white">
+
+  <div class="content w-2/3 bg-white rounded-xl">
     {#if postName in posts}
-      {@html marked(posts[postName].content)}
+      <article class="prose prose-lg 2xl:prose-xl text-left p-8">
+        {@html marked(posts[postName].content)}
+      </article>
     {:else}
       <p>{postName} doesn't exist!</p>
     {/if}
@@ -42,16 +44,7 @@
 </main>
 
 <style lang="postcss">
-  aside {
-    @apply bg-fuchsia-200;
-    flex-grow: 2;
-  }
-
-  main > div {
-    flex-grow: 5;
-  }
-
-  main > * {
-    @apply rounded-xl p-4;
+  main > aside > div {
+    @apply bg-gradient-to-bl from-fuchsia-200 to-fuchsia-300;
   }
 </style>

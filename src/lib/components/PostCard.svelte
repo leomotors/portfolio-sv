@@ -15,6 +15,7 @@
 >
   <h1 class="font-bold text-xl">{data.title}</h1>
   <h2>{data.desc}</h2>
+  <h2>{data.date}</h2>
 </div>
 
 <style lang="postcss">
