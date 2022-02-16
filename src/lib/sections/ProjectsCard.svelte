@@ -9,7 +9,7 @@
   style="background-image: url(images/coding-bg.webp)"
 >
   <blockquote
-    class="text-left text-gray-100 font-serif m-3 p-3 max-w-full lg:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute sm:left-4 top-4 hover:scale-102.5 transition-transform"
+    class="text-left text-gray-100 font-serif m-3 p-3 max-w-full lg:w-2/3 xl:w-3/5 2xl:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute sm:left-4 top-4 hover:scale-102.5 transition-transform"
   >
     <span class="quotation-mark">&ldquo;</span>
     <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;</span>

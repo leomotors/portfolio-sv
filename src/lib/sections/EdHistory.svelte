@@ -12,7 +12,7 @@
   >
     {#each schools as school, index}
       <div
-        class="school-card bg-gray-200 max-w-full sm:w-72 xl:w-80 2xl:w-96 mx-auto mt-4 md:mt-0 md:mx-2 rounded shadow-xl hover:scale-105 transition-transform"
+        class="school-card bg-gray-200 max-w-full sm:w-72 xl:w-80 2xl:w-96 mx-auto mt-4 md:mt-0 md:mx-2 rounded shadow-xl expand"
       >
         <div
           class="card-image w-full h-32 xl:h-40 2xl:h-48 bg-cover bg-center rounded-t hover:cursor-pointer"

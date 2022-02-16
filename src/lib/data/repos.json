@@ -40,7 +40,7 @@
         {
             "title": "My Portfolio",
             "link": "https://github.com/Leomotors/portfolio-sv",
-            "desc": "This Website you are seeing right now! Written in SvelteKit + TailwindCSS and no UI Framework",
+            "desc": "THIS Website you are seeing right now! Written in SvelteKit + TailwindCSS and no UI Framework",
             "language": "Svelte",
             "img": "https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?size=626&ext=jpg"
         },
@@ -73,7 +73,7 @@
             "title": "Food Busters",
             "link": "https://github.com/Food-Busters",
             "desc": "Participated in AIS Jump Thailand Hackathon, Our goal is to make innovation that reduces pollution from food wastes",
-            "img": "https://github.com/Food-Busters/food_busters/raw/main/assets/images/cow.png"
+            "img": "images/somwua.webp"
         }
     ]
 }

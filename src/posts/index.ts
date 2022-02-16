@@ -1,5 +1,4 @@
-import hello from "./hello.md?raw";
-import hello2 from "./hello2.md?raw";
+import testing from "./220215.md";
 
 export interface PostMeta {
   title: string;
@@ -9,17 +8,11 @@ export interface PostMeta {
 }
 
 const posts: { [key: string]: PostMeta } = {
-  hello: {
-    title: "Hello Test 1",
-    desc: "Testing",
-    date: "2022-02-09",
-    content: hello,
-  },
-  hello2: {
-    title: "Hello Test 2",
-    desc: "Testing",
-    date: "2022-02-09",
-    content: hello2,
+  testing: {
+    title: "Testing",
+    desc: "Test Markdown",
+    date: "2022-02-15",
+    content: testing,
   },
 };
 

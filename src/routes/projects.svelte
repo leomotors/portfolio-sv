@@ -1,5 +1,6 @@
 <script lang="ts">
   import BigCard from "$lib/components/BigCard.svelte";
+  import ext from "$lib/components/ext";
   import RepoCard from "$lib/components/RepoCard.svelte";
 
   import { featured, carelessdev, big_projects } from "$lib/data/repos.json";
@@ -19,21 +20,11 @@
   >
     <p slot="card-footer" class="text-left ml-6">
       For all of my repositories, you may visit my
-      <a
-        href="https://github.com/Leomotors?tab=repositories"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://github.com/Leomotors?tab=repositories" {...ext}>
         GitHub Account
       </a>
       or
-      <a
-        href="https://leomotors-repos.vercel.app/"
-        target="_blank"
-        rel="noopener"
-      >
-        this website
-      </a>
+      <a href="https://leomotors-repos.vercel.app/" {...ext}> this website </a>
     </p>
     {#each featured as repo}
       <RepoCard data={repo} />

@@ -3,6 +3,10 @@ import preprocess from "svelte-preprocess";
 
 import path from "path";
 import { defineConfig } from "vite";
+import Inspect from "vite-plugin-inspect";
+
+import { marked } from "marked";
+import hljs from "highlight.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -17,6 +21,30 @@ export default {
           $posts: path.resolve("./src/posts"),
         },
       },
+      plugins: [
+        Inspect(),
+        {
+          // * Preprocess *.md files at compile time
+          name: "preprocess-markdown",
+          transform(src, id) {
+            if (id.endsWith(".md")) {
+              const html = marked(src, {
+                highlight(code, lang) {
+                  return hljs.highlight(code, { language: lang }).value;
+                },
+              }).replace(/"/g, '\\"');
+
+              const tokens = html.split("\n").map((line) => `"${line}"`);
+
+              return {
+                code: `export default [
+                  ${tokens}
+                ].join("\\n")`,
+              };
+            }
+          },
+        },
+      ],
     }),
   },
 };
