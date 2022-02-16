@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ext from "$lib/components/ext";
   import GitHub from "$lib/icons/GitHub.svelte";
   import { timeago } from "$lib/utils";
 
@@ -9,8 +10,7 @@
   <div class="left flex flex-row items-center gap-2">
     <a
       class="nav-label hover:text-gray-300"
-      target="_blank"
-      rel="noopener"
+      {...ext}
       href="https://github.com/Leomotors"
       title="Click here to visit my GitHub Profile"
     >
@@ -28,8 +28,7 @@
       <a
         class="text-sky-300 hover:text-sky-200"
         href="https://github.com/Leomotors/portfolio-sv"
-        target="_blank"
-        rel="noopener"
+        {...ext}
       >
         Source Code
       </a>

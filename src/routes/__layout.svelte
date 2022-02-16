@@ -28,6 +28,8 @@
   import "$lib/styles/global.postcss";
   import "$lib/styles/cardpage.postcss";
 
+  import { page } from "$app/stores";
+
   import NavBar from "$lib/layout/NavBar.svelte";
   import Footer from "$lib/layout/Footer.svelte";
 
@@ -36,13 +38,13 @@
 
 <NavBar {status} />
 
-<main class="pb-6">
+<main class:notindex={$page.url.pathname != "/"}>
   <slot />
 </main>
 
 <Footer />
 
-<style lang="css">
+<style lang="postcss">
   /* NavBar h-12 = 3rem */
   main {
     /* Footer h-32 = 8rem */
@@ -54,5 +56,9 @@
     main {
       min-height: calc(100vh - 7rem);
     }
+  }
+
+  .notindex {
+    @apply pb-6;
   }
 </style>

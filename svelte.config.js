@@ -32,7 +32,7 @@ export default {
                 highlight(code, lang) {
                   return hljs.highlight(code, { language: lang }).value;
                 },
-              }).replaceAll('"', '\\"');
+              }).replace(/"/g, '\\"');
 
               const tokens = html.split("\n").map((line) => `"${line}"`);
 

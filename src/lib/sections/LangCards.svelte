@@ -62,7 +62,7 @@
         <span class="text-gray-600"> (Most likely forgotten) </span>
       </p>
       <p class="langs">C# Java Kotlin Go</p>
-      <p>If I say these are Programming Language, it may trigger someone</p>
+      <p class="italic">&lsquo;Programming Language&rsquo;</p>
       <p class="langs">HTML CSS SCSS Svelte</p>
     </div>
   </div>
@@ -70,7 +70,7 @@
 
 <style lang="postcss">
   .lang-card {
-    @apply shadow-lg w-full md:w-2/3 xl:w-2/5 2xl:w-1/3 bg-white rounded-lg m-12 hover:scale-105 transition-transform;
+    @apply shadow-lg w-full md:w-2/3 xl:w-2/5 2xl:w-1/3 bg-white rounded-lg m-12 expand;
   }
 
   .lang-card > h1 {

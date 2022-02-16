@@ -1,4 +1,4 @@
-import firstpost from "./220215.md";
+import testing from "./220215.md";
 
 export interface PostMeta {
   title: string;
@@ -12,7 +12,7 @@ const posts: { [key: string]: PostMeta } = {
     title: "Testing",
     desc: "Test Markdown",
     date: "2022-02-15",
-    content: firstpost,
+    content: testing,
   },
 };
 

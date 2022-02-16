@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "2.0.82",
+  "version": "2.0.85",
   "type": "module",
   "license": "MIT",
   "author": "Leomotors",
@@ -14,15 +14,17 @@
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check \"src/**/*.{ts,svelte}\" && eslint src",
-    "format": "prettier --write \"src/**/*.{ts,svelte}\""
+    "lint": "prettier --check \"*.config.{cjs,js,ts}\" && prettier --check \"src/**/*.{ts,svelte}\" && eslint src",
+    "format": "prettier --write \"*.config.{cjs,js,ts}\" && prettier --write \"src/**/*.{ts,svelte}\""
   },
   "devDependencies": {
+    "@octokit/types": "^6.34.0",
     "@sveltejs/adapter-vercel": "1.0.0-next.43",
     "@sveltejs/kit": "1.0.0-next.272",
     "@tailwindcss/typography": "^0.5.2",
     "@types/marked": "^4.0.2",
     "@types/node-emoji": "^1.8.1",
+    "@types/tailwindcss": "^3.0.8",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "autoprefixer": "^10.4.2",
@@ -42,7 +44,7 @@
     "svelte": "^3.46.4",
     "svelte-check": "^2.4.4",
     "svelte-preprocess": "^4.10.3",
-    "tailwindcss": "^3.0.22",
+    "tailwindcss": "^3.0.23",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5",
     "vanta": "^0.5.21",

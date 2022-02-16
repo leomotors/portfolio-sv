@@ -8,15 +8,13 @@
 </script>
 
 <script lang="ts">
-  // import "$lib/styles/markdown.css";
   import "highlight.js/styles/github-dark.css";
   import posts from "$posts";
 
   export let postName: string;
 </script>
 
-<h1 class="page-title">Under Construction</h1>
-<main class="flex flex-row gap-4 p-4 mt-8">
+<main class="flex flex-row gap-4 p-4 xl:px-8 2xl:px-32 mt-8">
   <aside class="w-1/3">
     <div class="aside-content p-4 rounded-xl">
       <a href="/blog" class="font-medium text-xl">See all posts</a>
@@ -34,7 +32,7 @@
 
   <div class="content w-2/3 bg-white rounded-xl">
     {#if postName in posts}
-      <article class="prose prose-lg 2xl:prose-xl text-left p-8">
+      <article class="prose prose-lg 2xl:prose-xl max-w-none text-left p-8">
         {@html posts[postName].content}
       </article>
     {:else}

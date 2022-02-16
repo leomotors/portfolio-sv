@@ -6,7 +6,6 @@
 
 <main class="card-page">
   <h1 class="page-title">Blog Posts</h1>
-  <h2 class="page-subtitle text-rose-800">UNDER CONSTRUCTION</h2>
 
   <BigCard title="All Posts" subtitle="Sorted by Latest">
     {#each Object.entries(posts) as [postKey, data]}

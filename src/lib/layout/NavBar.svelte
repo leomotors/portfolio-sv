@@ -137,6 +137,6 @@
   }
   .nav-menu > a,
   .dropdown-text {
-    @apply mx-2 px-2 bg-gray-50 rounded hover:bg-gray-100 hover:scale-105 transition-all;
+    @apply mx-2 px-2 bg-gray-50 rounded hover:bg-gray-100 expand transition-all;
   }
 </style>

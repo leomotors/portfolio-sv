@@ -4,7 +4,7 @@
   export let data: ImageCardData;
 </script>
 
-<div class="card hover:scale-102.5 rounded-lg shadow-lg m-4">
+<div class="card expand-sm rounded-lg shadow-lg m-4">
   <div
     class="img {data.link ? 'cursor-pointer' : ''} {data.bgtl
       ? 'bg-left-top'
@@ -25,7 +25,7 @@
 
 <style lang="postcss">
   .card {
-    @apply rounded-lg shadow-lg m-4 transition-transform;
+    @apply rounded-lg shadow-lg m-4;
   }
 
   .img {
