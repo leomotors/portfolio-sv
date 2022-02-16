@@ -6,11 +6,6 @@ module.exports = {
       scale: {
         102.5: "1.025",
       },
-      colors: {
-        emerald: {
-          150: "#bcf7db",
-        },
-      },
       spacing: {
         160: "40rem",
       },

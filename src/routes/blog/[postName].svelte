@@ -9,7 +9,7 @@
 
 <script lang="ts">
   // import "$lib/styles/markdown.css";
-  import { marked } from "marked";
+  import "highlight.js/styles/github-dark.css";
   import posts from "$posts";
 
   export let postName: string;
@@ -35,7 +35,7 @@
   <div class="content w-2/3 bg-white rounded-xl">
     {#if postName in posts}
       <article class="prose prose-lg 2xl:prose-xl text-left p-8">
-        {@html marked(posts[postName].content)}
+        {@html posts[postName].content}
       </article>
     {:else}
       <p>{postName} doesn't exist!</p>

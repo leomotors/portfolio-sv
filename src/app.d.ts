@@ -9,3 +9,8 @@ declare namespace App {
 
   interface Stuff {}
 }
+
+declare module "*.md" {
+  const value: string;
+  export default value;
+}

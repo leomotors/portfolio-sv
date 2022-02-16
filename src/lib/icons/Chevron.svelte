@@ -1,16 +1,16 @@
 <script lang="ts">
   export let open: boolean;
+  export let size = "16";
 </script>
 
 <!-- https://icons.getbootstrap.com/icons/chevron-down/ -->
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
+  width={size}
+  height={size}
   fill="currentColor"
-  class="bi bi-chevron-down transition-all duration-500 my-auto {open
-    ? ' -rotate-90'
-    : ''}"
+  class="bi bi-chevron-down transition-all duration-500 my-auto"
+  class:-rotate-90={open}
   viewBox="0 0 16 16"
 >
   <path
