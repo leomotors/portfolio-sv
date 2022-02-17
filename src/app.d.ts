@@ -11,6 +11,6 @@ declare namespace App {
 }
 
 declare module "*.md" {
-  const value: string;
+  const value: import("$lib/types").PostMeta;
   export default value;
 }

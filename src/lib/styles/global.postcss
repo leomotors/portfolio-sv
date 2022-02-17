@@ -1,7 +1,15 @@
 /* Global Styles (PostCSS) */
 
+.credit-text-base {
+  @apply text-slate-200 select-none xl:text-xl;
+}
+
 .credit-text {
-  @apply text-slate-200 absolute bottom-3 right-6 select-none xl:text-xl;
+  @apply credit-text-base absolute bottom-3 right-6;
+}
+
+.credit-text-inline {
+  @apply credit-text-base text-right mr-6;
 }
 
 .big-picture-card {

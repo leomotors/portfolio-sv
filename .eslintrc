@@ -13,6 +13,12 @@
     {
       "files": ["*.svelte"],
       "processor": "svelte3/svelte3"
+    },
+    {
+      "files": ["*.plugin.*"],
+      "rules": {
+        "no-console": "off"
+      }
     }
   ],
   "rules": {

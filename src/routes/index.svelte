@@ -42,7 +42,7 @@
 </script>
 
 <main
-  class="introduction-zone max-w-full pt-8 pb-4 shadow-xl relative"
+  class="introduction-zone max-w-full pt-8 pb-4 shadow-xl"
   bind:this={vantaRef}
 >
   <div
@@ -94,7 +94,7 @@
     </div>
   </div>
 
-  <div class="about 2xl:mt-6">
+  <div class="about 2xl:mt-6 select-none">
     <button
       class="bg-white rounded-lg shadow-lg py-4 px-6 text-2xl expand"
       on:click={() => {
@@ -105,7 +105,7 @@
     </button>
   </div>
 
-  <div class="vanta-credit credit-text">
+  <div class="vanta-credit credit-text-inline">
     3D Globe by
     <a class="hover:text-slate-500" href="https://www.vantajs.com/" {...ext}>
       Vanta.js

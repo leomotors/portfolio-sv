@@ -88,11 +88,11 @@
   </div>
 
   <div
-    class="dropdown-menu absolute right-4 top-0 p-4 bg-white rounded {forcedOpen ||
+    class="dropdown-menu absolute right-4 top-10 p-4 bg-white rounded {forcedOpen ||
     mouseOnMenu ||
     mouseOnDropdown
-      ? 'translate-y-10 opacity-90'
-      : 'opacity-0 pointer-events-none'} transition-all flex flex-col hover:scale-102.5 md:hidden shadow-xl"
+      ? 'opacity-90'
+      : 'opacity-60 translate-x-28 pointer-events-none'} expand-sm transition-all flex flex-col  md:hidden shadow-xl"
     on:mouseenter={() => {
       mouseOnDropdown = true;
       clearTimeout(mouseOnDropdownTimeout);
@@ -103,14 +103,19 @@
         mouseOnDropdownTimeout = null;
       }, 750);
     }}
-    on:click={() => {
-      forcedOpen = false;
-      mouseOnMenu = false;
-      mouseOnDropdown = false;
-    }}
   >
     {#each Object.entries(links) as [key, val]}
-      <a class="hover:underline" href="/{key}">{val}</a>
+      <a
+        class="hover:underline"
+        href="/{key}"
+        on:click={() => {
+          forcedOpen = false;
+          mouseOnMenu = false;
+          mouseOnDropdown = false;
+        }}
+      >
+        {val}
+      </a>
     {/each}
   </div>
 </main>
