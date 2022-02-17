@@ -1,16 +1,13 @@
 <script context="module" lang="ts">
   import type { Load } from "@sveltejs/kit";
 
-  import { GitHubProfileStatus, UserStatus } from "github-profile-status";
+  import type { UserStatus } from "github-profile-status";
   import emoji from "node-emoji";
 
   import type { GitHubStatus } from "$lib/types";
 
-  export const load: Load = async () => {
-    const profileStatus = new GitHubProfileStatus({
-      token: import.meta.env.VITE_GITHUB_ACCESS_TOKEN as string,
-    });
-    const status = (await profileStatus.get()) ?? ({} as UserStatus);
+  export const load: Load = async ({ fetch }) => {
+    const status: UserStatus = await (await fetch("/github")).json();
 
     return {
       maxage: 600,
