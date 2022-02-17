@@ -13,6 +13,7 @@
     const status = (await profileStatus.get()) ?? ({} as UserStatus);
 
     return {
+      maxage: 600,
       props: {
         status: {
           emoji: emoji.emojify(status.emoji),

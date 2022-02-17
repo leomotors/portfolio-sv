@@ -6,6 +6,7 @@
     const data = await res.json();
 
     return {
+      maxage: 600,
       props: { data },
     };
   };
