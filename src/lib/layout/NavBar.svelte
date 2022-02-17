@@ -92,7 +92,7 @@
     mouseOnMenu ||
     mouseOnDropdown
       ? 'opacity-90'
-      : 'opacity-60 translate-x-28 pointer-events-none'} expand-sm transition-all flex flex-col  md:hidden shadow-xl"
+      : 'opacity-0 translate-x-28 pointer-events-none'} expand-sm transition-all duration-500 flex flex-col  md:hidden shadow-xl"
     on:mouseenter={() => {
       mouseOnDropdown = true;
       clearTimeout(mouseOnDropdownTimeout);

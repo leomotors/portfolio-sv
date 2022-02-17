@@ -42,7 +42,7 @@ function getConfig(src, id) {
   };
 
   if (!lines[0].startsWith("---")) {
-    console.log(chalk.red(`[WARN: ${id}] No configuration found!`));
+    console.log(`[NOTE: ${id}] No configuration found.`);
     return {
       config,
       newSrc: src,
