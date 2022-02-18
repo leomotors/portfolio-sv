@@ -33,8 +33,17 @@
   import NavBar from "$lib/layout/NavBar.svelte";
   import Footer from "$lib/layout/Footer.svelte";
 
+  import { defaultTitle } from "$lib/constants";
+
   export let status: GitHubStatus;
 </script>
+
+<svelte:head>
+  <!-- Default Title for all pages (except named blog) -->
+  {#if !$page.url.pathname.includes("blog/")}
+    <title>{defaultTitle}</title>
+  {/if}
+</svelte:head>
 
 <NavBar {status} />
 
