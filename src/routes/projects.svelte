@@ -24,7 +24,7 @@
         GitHub Account
       </a>
       or
-      <a href="https://leomotors-repos.vercel.app/" {...ext}> this website </a>
+      <a href="https://repos.leomotors.vercel.app/" {...ext}> this website </a>
     </p>
     {#each featured as repo}
       <RepoCard data={repo} />

@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "2.0.109",
+  "version": "2.0.111",
   "type": "module",
   "license": "MIT",
   "author": "Leomotors",
@@ -24,14 +24,14 @@
     "@tailwindcss/typography": "^0.5.2",
     "@types/marked": "^4.0.2",
     "@types/node-emoji": "^1.8.1",
-    "@types/tailwindcss": "^3.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
+    "@types/tailwindcss": "^3.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
     "autoprefixer": "^10.4.2",
     "chalk": "^5.0.0",
     "cssnano": "^5.0.17",
     "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-svelte3": "^3.4.0",
     "github-profile-status": "^1.0.0",
     "highlight.js": "^11.4.0",
@@ -50,6 +50,6 @@
     "typescript": "^4.5.5",
     "vanta": "^0.5.21",
     "vite": "^2.8.4",
-    "vite-plugin-inspect": "^0.3.14"
+    "vite-plugin-inspect": "^0.3.15"
   }
 }
