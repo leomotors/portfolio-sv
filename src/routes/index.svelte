@@ -58,7 +58,7 @@
     </h2>
   </div>
 
-  <div
+  <!-- <div
     class="introduction-cards flex flex-col md:flex-row justify-around items-center lg:mx-12 mt-5"
   >
     <div class="introduction bg-pink-200">
@@ -92,6 +92,18 @@
         <p>💛 Open-Source Projects 💛</p>
       </div>
     </div>
+  </div> -->
+
+  <div class="introduction-card w-full lg:w-3/5 2xl:w-2/5">
+    <p>
+      I am 17 Years Old Student about to Graduate from Triam Udom Suksa (High
+      School)
+    </p>
+    <br />
+    <p>
+      What I mostly do are C++, Discord Bot (discord.js), Website with Svelte,
+      Flutter Android App and 💛 Open-Source Projects 💛
+    </p>
   </div>
 
   <div class="about 2xl:mt-6 select-none mb-8">
@@ -138,28 +150,12 @@
     @apply my-1.5;
   }
 
-  .introduction {
-    @apply py-6 px-3 flex flex-col align-middle shadow-xl max-w-full lg:w-1/2 xl:w-1/3 2xl:w-1/4;
+  .introduction-card {
+    @apply rounded-xl shadow-xl bg-pink-200 p-8 my-6 mx-auto;
   }
 
-  .introduction-cards > div {
-    @apply rounded-xl m-2 expand;
-  }
-
-  table td {
-    @apply text-left lg:text-lg xl:text-xl;
-  }
-
-  td:first-child {
-    @apply w-1/3;
-  }
-
-  td:last-child {
-    @apply w-2/3;
-  }
-
-  .card-content > p {
-    @apply lg:text-lg xl:text-xl;
+  .introduction-card > p {
+    @apply font-medium lg:text-xl text-left;
   }
 
   .vanta-credit {
