@@ -7,7 +7,7 @@
 <main class="card-page">
   <h1 class="page-title">Blog Posts</h1>
 
-  <BigCard title="All Posts" subtitle="Sorted by Latest">
+  <BigCard title="All Posts" subtitle="Sorted by Latest Post">
     {#each Object.entries(posts) as [postKey, data]}
       <PostCard {data} link="/blog/{postKey}" />
     {/each}
