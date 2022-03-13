@@ -58,42 +58,6 @@
     </h2>
   </div>
 
-  <!-- <div
-    class="introduction-cards flex flex-col md:flex-row justify-around items-center lg:mx-12 mt-5"
-  >
-    <div class="introduction bg-pink-200">
-      <h1 class="font-bold text-3xl mb-4">About me</h1>
-      <table class="table-auto max-w-full sm:w-96 mx-auto">
-        <tr>
-          <td> 🚹 Gender </td>
-          <td> Male </td>
-        </tr>
-        <tr>
-          <td> 🔢 Age </td>
-          <td> 17 </td>
-        </tr>
-        <tr>
-          <td> 📜 Grade </td>
-          <td> 12 </td>
-        </tr>
-        <tr>
-          <td> 🏫 School </td>
-          <td> Triam Udom Suksa School (Pending Graduation)</td>
-        </tr>
-      </table>
-    </div>
-    <div class="introduction bg-green-200">
-      <h1 class="font-bold text-3xl">What I mostly do</h1>
-      <div class="card-content my-auto">
-        <p>C++</p>
-        <p>Discord Bot (discord.js)</p>
-        <p>Website with Svelte</p>
-        <p>Flutter Android App</p>
-        <p>💛 Open-Source Projects 💛</p>
-      </div>
-    </div>
-  </div> -->
-
   <div class="introduction-card w-full lg:w-3/5 2xl:w-2/5">
     <p>
       I am 17 Years Old Student about to Graduate from Triam Udom Suksa (High
@@ -109,11 +73,9 @@
   <div class="about 2xl:mt-6 select-none mb-8">
     <button
       class="bg-white rounded-lg shadow-lg py-4 px-6 text-2xl expand"
-      on:click={() => {
-        goto("/about");
-      }}
+      on:click={() => goto("/about")}
     >
-      About
+      About Me
     </button>
   </div>
 
@@ -151,7 +113,7 @@
   }
 
   .introduction-card {
-    @apply rounded-xl shadow-xl bg-pink-200 p-8 my-6 mx-auto;
+    @apply rounded-xl shadow-xl bg-pink-100 p-8 my-6 mx-auto;
   }
 
   .introduction-card > p {

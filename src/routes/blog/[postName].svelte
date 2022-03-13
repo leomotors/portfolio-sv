@@ -53,7 +53,7 @@
     class="content w-full {panelActive && 'lg:w-2/3'} bg-white rounded-xl p-8"
   >
     <p
-      class="hidden lg:block text-left text-lg font-bold mb-4 cursor-pointer hover-link"
+      class="hidden lg:block text-left text-lg font-bold cursor-pointer hover-link"
       on:click={() => {
         panelActive = !panelActive;
       }}
@@ -61,6 +61,12 @@
       {panelActive ? "<<< Hide Contents Panel" : ">>> Show Contents Panel"}
     </p>
     {#if post}
+      <p class="text-left mt-2 mb-8">
+        Posted at {post.date}
+        {#if post.updated}
+          <span class="text-slate-600">(Last Updated {post.updated})</span>
+        {/if}
+      </p>
       <article class="prose lg:prose-lg 2xl:prose-xl max-w-none text-left">
         {@html post.content}
       </article>

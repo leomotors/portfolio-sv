@@ -39,6 +39,7 @@ function getConfig(src, id) {
     title: lines.find((l) => l.startsWith("# "))?.slice(2) ?? "",
     desc: "",
     date: parseDate(id),
+    updated: undefined,
   };
 
   if (!lines[0].startsWith("---")) {
@@ -124,6 +125,7 @@ export default {
           title: "${config.title}",
           desc: "${config.desc}",
           date: "${config.date}",
+          updated: ${config.updated ? `"${config.updated}"` : "undefined"},
           content: ${content}
         };`,
       };
