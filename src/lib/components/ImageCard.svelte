@@ -8,7 +8,7 @@
   <div
     class="img {data.link ? 'cursor-pointer' : ''} {data.bgtl
       ? 'bg-left-top'
-      : 'bg-center'}"
+      : 'bg-center'} {data.bgfit ? 'bg-contain' : 'bg-cover'}"
     style="background-image: url({data.img})"
     on:click={data.link &&
       (() => {
@@ -29,6 +29,6 @@
   }
 
   .img {
-    @apply w-full h-56 bg-cover rounded-t-lg bg-no-repeat relative;
+    @apply w-full h-56 rounded-t-lg bg-no-repeat relative;
   }
 </style>

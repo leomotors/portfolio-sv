@@ -4,4 +4,5 @@ export interface ImageCardData {
   desc: string;
   bgtl?: boolean;
   link?: string;
+  bgfit?: boolean;
 }

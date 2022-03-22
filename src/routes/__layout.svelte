@@ -26,6 +26,7 @@
 <script lang="ts">
   import "../app.css";
   import "$lib/styles/global.postcss";
+  import "$lib/styles/bigcard.postcss";
   import "$lib/styles/cardpage.postcss";
 
   import { page } from "$app/stores";
