@@ -33,22 +33,7 @@
         {
             "name": "C#",
             "img": "https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png",
-            "star": 3
-        },
-        {
-            "name": "Java",
-            "img": "https://seeklogo.com/images/J/java-logo-7F8B35BAB3-seeklogo.com.png",
-            "star": 1
-        },
-        {
-            "name": "Kotlin",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
-            "star": 1
-        },
-        {
-            "name": "Go",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png",
-            "star": 1
+            "star": 2
         }
     ],
     "webtech": [
@@ -71,6 +56,11 @@
             "name": "Firebase",
             "img": "https://firebase.google.com/images/brand-guidelines/logo-standard.png",
             "star": 2
+        },
+        {
+            "name": "REST API",
+            "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--RK-AgEnh--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/1s3bedypkt7zm8maikzg.png",
+            "star": 3
         }
     ],
     "appframework": [
@@ -100,6 +90,11 @@
             "name": "Discord Bot (discord.js)",
             "img": "https://discord.js.org/static/djs_logo.png",
             "star": 4
+        },
+        {
+            "name": "GitHub Actions",
+            "img": "https://avatars.githubusercontent.com/u/44036562?s=280&v=4",
+            "star": 2
         }
     ]
 }

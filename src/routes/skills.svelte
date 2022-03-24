@@ -19,14 +19,17 @@
     <h1>Stars Definition</h1>
     <hr />
     <div class="content px-8 py-4 text-xl font-semibold">
-      <p>1⭐ - Have learned / Finished a <em>basic</em> course</p>
       <p>
-        2⭐ - Have written a program (that is not from tutorial) with that
-        language/technology
+        1⭐ - Have written a program (that is not from tutorial or courses) with
+        that language/technology
       </p>
       <p>
-        3⭐ - Done a sized project with that language/technology, can use that
-        language/technology quite good
+        2⭐ - Done a sized project with that language/technology, but still not
+        able to use them efficiently yet
+      </p>
+      <p>
+        3⭐ - Done a sized project with that language/technology and can use
+        that language/technology quite good
       </p>
       <p>
         4⭐ - Have done many sized project with that language/technology, know
@@ -36,7 +39,10 @@
         5⭐ - 4 Stars but relatively better proficient and more frequently used
         compared to others
       </p>
-      <p>6⭐ - Know everything of it</p>
+      <p>
+        6⭐ - Know everything of it (which tbh, there is no way you can know
+        everything, there is many new things to discover everyday)
+      </p>
 
       <p>
         List of all my GitHub Repositories
