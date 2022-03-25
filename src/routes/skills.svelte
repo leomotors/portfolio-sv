@@ -9,7 +9,6 @@
     appframework,
     others,
   } from "$lib/data/skills.json";
-  import About from "./about.svelte";
 </script>
 
 <main class="card-page">
@@ -28,7 +27,7 @@
         able to use them efficiently yet
       </p>
       <p>
-        3⭐ - Done a sized project with that language/technology and can use
+        3⭐ - Have done many sized project that language/technology and can use
         that language/technology quite good
       </p>
       <p>

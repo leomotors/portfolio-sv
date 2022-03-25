@@ -94,7 +94,17 @@
         {
             "name": "GitHub Actions",
             "img": "https://avatars.githubusercontent.com/u/44036562?s=280&v=4",
-            "star": 2
+            "star": 3
+        },
+        {
+            "name": "CMake",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cmake.svg/1200px-Cmake.svg.png",
+            "star": 3
+        },
+        {
+            "name": "Raspberry Pi",
+            "img": "https://www.raspberrypi.com/app/uploads/2022/02/COLOUR-Raspberry-Pi-Symbol-Registered.png",
+            "star": 3
         }
     ]
 }
