@@ -1,7 +1,9 @@
 <script context="module" lang="ts">
   import type { Load } from "@sveltejs/kit";
 
-  import { GitHubProfileStatus, UserStatus } from "github-profile-status";
+  import { GitHubProfileStatus } from "github-profile-status";
+  import type { UserStatus } from "github-profile-status";
+
   import emoji from "node-emoji";
 
   import type { GitHubStatus } from "$lib/types";

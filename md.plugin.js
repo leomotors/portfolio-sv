@@ -83,13 +83,6 @@ function getConfig(src, id) {
     config[prop.trim()] = val.join(":").trim();
   }
 
-  // * Check for required properties (Right now, does not exist)
-  for (const [prop, val] of Object.entries(config)) {
-    if (val === undefined) {
-      console.log(chalk.red(`[WARN: ${id}] Property ${prop} is required!`));
-    }
-  }
-
   return {
     config,
     newSrc: lines.slice(closing + 1).join("\n"),

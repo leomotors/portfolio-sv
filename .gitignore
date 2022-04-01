@@ -11,3 +11,4 @@ src/config.ts
 .vercel_build_output
 
 .env
+*.g.*

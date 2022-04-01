@@ -3,7 +3,7 @@
   import GitHub from "$lib/icons/GitHub.svelte";
   import { timeago } from "$lib/utils";
 
-  import { Version, BuildTime } from "../../config";
+  import { Version, BuildTime } from "../../config.g";
 </script>
 
 <main class="w-full bg-slate-800 h-32 lg:h-16 py-2 px-6 xl:px-8 text-white">
