@@ -113,7 +113,7 @@
   }
 
   .introduction-card {
-    @apply rounded-xl shadow-xl bg-pink-100 p-8 my-6 mx-auto;
+    @apply rounded-xl shadow-xl bg-gradient-to-br from-pink-200 to-green-100 p-8 my-6 mx-auto;
   }
 
   .introduction-card > p {
