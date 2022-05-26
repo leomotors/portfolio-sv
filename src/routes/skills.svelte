@@ -27,8 +27,8 @@
         able to use them efficiently yet
       </p>
       <p>
-        3⭐ - Have done many sized project with that language/technology and can use
-        that language/technology quite good
+        3⭐ - Have done many sized project with that language/technology and can
+        use that language/technology quite good
       </p>
       <p>
         4⭐ - Have done many sized project with that language/technology, know

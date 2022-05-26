@@ -1,34 +1,47 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
   import { goto } from "$app/navigation";
-  import type { GitHubStatus } from "$lib/types";
-  import { shorten } from "$lib/utils";
+  import { page } from "$app/stores";
 
-  // Dropdown Menu Stuff
-  let mouseOnMenu = false;
-  let mouseOnDropdown = false;
-  let mouseOnMenuTimeout: NodeJS.Timeout = null;
-  let mouseOnDropdownTimeout: NodeJS.Timeout = null;
-  let forcedOpen = false;
+  import List from "$lib/icons/List.svelte";
+  import LightDark from "$lib/icons/LightDark.svelte";
 
-  const links = {
-    about: "About",
+  export let dark = false;
+
+  let popup = false;
+
+  const routes = {
     skills: "Skills",
     activities: "Activities",
     projects: "Projects",
-    blog: "Blog",
   };
 
-  const statTitle = "My Current GitHub Status";
+  function toggleDark() {
+    dark = !dark;
+    localStorage.setItem("dark", dark ? "true" : "false");
+  }
 
-  export let status: GitHubStatus;
+  onMount(() => {
+    const prefered =
+      localStorage.getItem("dark") ??
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? true
+        : false;
+
+    if (prefered) dark = true;
+    else dark = false;
+
+    window.addEventListener("click", () => (popup = false));
+  });
 </script>
 
 <main
-  class="navbar bg-indigo-200 w-full h-12 px-6 xl:px-8 flex flex-row items-center justify-between relative z-10"
+  class="w-4/5 lg:w-2/3 mx-auto h-32 flex flex-row items-center justify-between select-none"
 >
-  <div class="gh-tag flex flex-row">
+  <div class="left flex flex-row">
     <img
-      class="h-10 w-10 rounded-full my-auto cursor-pointer"
+      class="h-12 w-12 rounded-full my-auto cursor-pointer"
       src="https://avatars.githubusercontent.com/u/59821765?v=4"
       alt="My GitHub Profile Pic"
       title="My GitHub Profile Picture / Click here to go to home page"
@@ -36,112 +49,60 @@
         goto("/");
       }}
     />
-
-    {#if status.message}
-      <p class="ml-2 flex flex-row items-center">
-        {#if status.emoji}
-          <span class="text-3xl">
-            {status.emoji}
-          </span>
-        {/if}
-        <span
-          class="hidden lg:inline xl:hidden"
-          title={status.message.length > 36 ? status.message : statTitle}
-        >
-          {shorten(status.message, 36)}
-        </span>
-        <span class="hidden xl:inline" title={statTitle}>
-          {status.message}
-        </span>
-      </p>
-    {/if}
   </div>
 
-  <!-- Navigation Menu, Unfold on big screen, Dropdown menu on small screen -->
-  <div class="nav-menu flex flex-row">
-    <!-- Full Menu on Big Screen -->
-    {#each Object.entries(links) as [key, val]}
-      <a href="/{key}">{val}</a>
-    {/each}
-    <!-- Short Menu that spawns dropdown -->
-    <p
-      class="dropdown-text inline md:hidden"
-      on:mouseenter={() => {
-        mouseOnMenu = true;
-        clearTimeout(mouseOnMenuTimeout);
-      }}
-      on:mouseleave={() => {
-        mouseOnMenuTimeout = setTimeout(() => {
-          mouseOnMenu = false;
-          mouseOnMenuTimeout = null;
-        }, 750);
-      }}
-      on:click={() => {
-        forcedOpen = !forcedOpen;
-        if (!forcedOpen) {
-          mouseOnMenu = mouseOnDropdown = false;
-        }
-      }}
+  <div class="right flex flex-row gap-4">
+    <button on:click={toggleDark}>
+      <LightDark {dark} />
+    </button>
+
+    <!-- Desktop Nav -->
+    <div
+      class="links px-4 flex-row hidden sm:flex justify-end items-center gap-2"
     >
-      Menu
-    </p>
-  </div>
+      {#each Object.entries(routes) as [url, name]}
+        <a
+          class="text-xl p-2 rounded transition-all {(
+            url == '/'
+              ? $page.url.pathname == '/'
+              : $page.url.pathname == '/' + url
+          )
+            ? 'bg-slate-400 dark:bg-slate-800'
+            : 'hover:bg-slate-300 dark:hover:bg-slate-700'}"
+          href={url}
+        >
+          {name}
+        </a>
+      {/each}
+    </div>
 
-  <div
-    class="dropdown-menu absolute right-4 top-10 p-4 bg-white rounded {forcedOpen ||
-    mouseOnMenu ||
-    mouseOnDropdown
-      ? 'opacity-90'
-      : 'opacity-0 translate-x-28 pointer-events-none'} expand-sm transition-all duration-500 flex flex-col  md:hidden shadow-xl"
-    on:mouseenter={() => {
-      mouseOnDropdown = true;
-      clearTimeout(mouseOnDropdownTimeout);
-    }}
-    on:mouseleave={() => {
-      mouseOnDropdownTimeout = setTimeout(() => {
-        mouseOnDropdown = false;
-        mouseOnDropdownTimeout = null;
-      }, 750);
-    }}
-  >
-    {#each Object.entries(links) as [key, val]}
-      <a
-        class="hover:underline"
-        href="/{key}"
-        on:click={() => {
-          forcedOpen = false;
-          mouseOnMenu = false;
-          mouseOnDropdown = false;
-        }}
-      >
-        {val}
-      </a>
-    {/each}
+    <!-- Mobile Nav -->
+    <div
+      class="inline sm:hidden bg-slate-200 dark:bg-slate-800 hover:bg-slate-600 p-2 rounded"
+      on:click={() => setTimeout(() => (popup = !popup), 10)}
+    >
+      <List />
+    </div>
+
+    <div
+      class="bg-slate-200 dark:bg-slate-800 rounded flex flex-col {popup
+        ? 'right-8 opacity-100'
+        : '-right-28 opacity-0'} absolute top-4 p-2 transition-all"
+    >
+      {#each Object.entries(routes) as [url, name]}
+        <a
+          class="text-xl {(
+            url == '/'
+              ? $page.url.pathname == '/'
+              : $page.url.pathname == '/' + url
+          )
+            ? 'text-pink-500'
+            : 'dark:text-white'} p-2 rounded transition-all"
+          href={url}
+        >
+          {name}
+        </a>
+      {/each}
+    </div>
   </div>
 </main>
-
-<style lang="postcss">
-  * {
-    @apply select-none;
-  }
-
-  /* Text Stuff */
-  .gh-tag > p,
-  .nav-menu > a,
-  .dropdown-text {
-    @apply my-auto font-medium text-lg;
-  }
-
-  .gh-tag > p {
-    @apply text-xl text-gray-700;
-  }
-
-  /* Dropdown Menu Stuff */
-  .nav-menu > a {
-    @apply hidden md:inline;
-  }
-  .nav-menu > a,
-  .dropdown-text {
-    @apply mx-2 px-2 bg-gray-50 rounded hover:bg-gray-100 expand transition-all;
-  }
-</style>

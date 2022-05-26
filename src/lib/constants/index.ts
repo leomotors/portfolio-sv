@@ -1,1 +1,1 @@
-export const defaultTitle = "Leomotors Portfolio";
+export const blogPostUrl = "https://leomotors.gitbook.io/blog/";

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>Leomotors Portfolio</title>
     <meta
       name="description"
       content="Introduction and Project Showcase of a programmer who have a dream"
@@ -28,13 +29,9 @@
       gtag("js", new Date());
       gtag("config", "G-QNXM1DS0K2");
     </script>
-    <!-- three.js for Vanta.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    %svelte.head%
+    %sveltekit.head%
   </head>
-  <body>
-    <div id="svelte" class="text-center bg-sky-50 overflow-x-hidden">
-      %svelte.body%
-    </div>
+  <body class="text-center">
+    <div class="overflow-x-hidden relative">%sveltekit.body%</div>
   </body>
 </html>

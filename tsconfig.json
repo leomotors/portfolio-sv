@@ -3,8 +3,9 @@
   "compilerOptions": {
     "paths": {
       "$lib": ["src/lib"],
-      "$lib/*": ["src/lib/*"],
-      "$posts": ["src/posts"],
-    }
+      "$lib/*": ["src/lib/*"]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   }
 }

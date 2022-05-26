@@ -1,4 +1,6 @@
 <script lang="ts">
+  import "./projects.css";
+
   import BigCard from "$lib/components/BigCard.svelte";
   import ext from "$lib/components/ext";
   import RepoCard from "$lib/components/RepoCard.svelte";
@@ -6,7 +8,7 @@
   import { featured, carelessdev, big_projects } from "$lib/data/repos.json";
 </script>
 
-<main class="card-page">
+<main class="card-page projects">
   <h1 class="page-title">My Projects</h1>
   <h2 class="page-subtitle">
     Projects related to Programming and Technology I have done
@@ -52,9 +54,3 @@
     {/each}
   </BigCard>
 </main>
-
-<style lang="postcss">
-  a {
-    @apply text-blue-700 hover:text-pink-600;
-  }
-</style>
