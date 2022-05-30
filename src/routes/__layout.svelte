@@ -28,6 +28,6 @@
 
 <style lang="postcss">
   section {
-    @apply min-h-[calc(100vh-16rem)] lg:min-h-[calc(100vh-12rem)];
+    @apply min-h-[calc(100vh-16rem-1px)] lg:min-h-[calc(100vh-12rem-1px)] pb-6;
   }
 </style>

@@ -5,7 +5,8 @@
   import ext from "$lib/components/ext";
   import RepoCard from "$lib/components/RepoCard.svelte";
 
-  import { featured, carelessdev, big_projects } from "$lib/data/repos.json";
+  import { featured, carelessdev, big_projects } from "$lib/data/projects.json";
+  import { harvard } from "$lib/data/amazingQuotes.json";
 </script>
 
 <main class="card-page projects">
@@ -13,6 +14,8 @@
   <h2 class="page-subtitle">
     Projects related to Programming and Technology I have done
   </h2>
+
+  <p class="w-[90%] lg:w-3/5 mx-auto mb-10">&ldquo;{harvard}&rdquo;</p>
 
   <!-- Featured GitHub Repositories -->
   <BigCard

@@ -4,7 +4,7 @@
   export let data: ImageCardData;
 </script>
 
-<div class="card dark:bg-slate-700 dark:shadow-white expand-sm">
+<div class="card bg-white dark:bg-slate-700 dark:shadow-white expand-sm">
   <div
     class="img {data.link ? 'cursor-pointer' : ''} {data.bgtl
       ? 'bg-left-top'

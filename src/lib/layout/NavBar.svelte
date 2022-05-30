@@ -12,6 +12,7 @@
   let popup = false;
 
   const routes = {
+    "/": "Home",
     skills: "Skills",
     activities: "Activities",
     projects: "Projects",
@@ -44,7 +45,7 @@
       class="h-12 w-12 rounded-full my-auto cursor-pointer"
       src="https://avatars.githubusercontent.com/u/59821765?v=4"
       alt="My GitHub Profile Pic"
-      title="My GitHub Profile Picture / Click here to go to home page"
+      title="My GitHub Profile Picture"
       on:click={() => {
         goto("/");
       }}
@@ -67,7 +68,7 @@
               ? $page.url.pathname == '/'
               : $page.url.pathname == '/' + url
           )
-            ? 'bg-slate-400 dark:bg-slate-800'
+            ? 'bg-slate-400 dark:bg-slate-800 cursor-default'
             : 'hover:bg-slate-300 dark:hover:bg-slate-700'}"
           href={url}
         >

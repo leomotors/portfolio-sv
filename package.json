@@ -1,6 +1,6 @@
 {
   "name": "portfolio-sv",
-  "version": "3.0.129",
+  "version": "3.0.130",
   "type": "module",
   "license": "MIT",
   "author": "Leomotors",
@@ -25,7 +25,7 @@
     "@typescript-eslint/parser": "^5.26.0",
     "autoprefixer": "^10.4.7",
     "chalk": "^5.0.1",
-    "cssnano": "^5.1.9",
+    "cssnano": "^5.1.10",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",

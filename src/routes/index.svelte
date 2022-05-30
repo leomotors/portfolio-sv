@@ -1,3 +1,7 @@
-<main>
-  <h1 class="page-title">Refactor in Progress</h1>
-</main>
+<script>
+  import GitHub from "$lib/icons/GitHub.svelte";
+</script>
+
+<h1 class="page-title">Welcome to my Portfolio!</h1>
+
+<h2 class="text-2xl">I'm Nutthapat Pongtanyavichai (Leo)</h2>
