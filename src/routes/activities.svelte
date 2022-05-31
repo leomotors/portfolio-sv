@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { awards } from "$lib/data/awards.json";
+  import { activities, awards } from "$lib/data/awards.json";
 
   import BigCard from "$lib/components/BigCard.svelte";
   import ImageCard from "$lib/components/ImageCard.svelte";
@@ -16,8 +16,10 @@
 
   <BigCard
     title="Activities"
-    subtitle="Activities related to Computer and Technology, ex. Joining Competition / Contest"
+    subtitle="Activities related to Computer and Technology, ex. Joining Competition / Contest / Training Camp"
   >
-    <h1 class="text-6xl py-8 ml-4">Coming Soon</h1>
+    {#each activities as activity}
+      <ImageCard data={activity} />
+    {/each}
   </BigCard>
 </main>
