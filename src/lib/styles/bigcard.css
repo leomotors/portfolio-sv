@@ -1,9 +1,9 @@
 .big-card {
-  @apply m-4 p-4 max-w-full rounded-xl bg-gray-100 dark:bg-black shadow-lg dark:shadow-white;
+  @apply m-4 max-w-full rounded-xl bg-gray-100 p-4 shadow-lg dark:bg-black dark:shadow-white;
 }
 
 .big-card > h1 {
-  @apply text-3xl font-bold text-left;
+  @apply text-left text-3xl font-bold;
 }
 
 .big-card > h2 {
@@ -16,7 +16,7 @@
 }
 
 .big-card > hr {
-  @apply text-gray-300 mt-2 mb-1 mx-4;
+  @apply mx-4 mt-2 mb-1 text-gray-300;
 }
 
 .big-card > .card-content {

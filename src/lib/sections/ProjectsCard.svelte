@@ -9,14 +9,14 @@
   style="background-image: url(images/coding-bg.webp)"
 >
   <blockquote
-    class="text-left text-gray-100 font-serif m-3 p-3 max-w-full lg:w-2/3 xl:w-3/5 2xl:w-1/2 text-xl xl:text-2xl bg-slate-700 rounded-xl absolute sm:left-4 top-4 hover:scale-102.5 transition-transform"
+    class="hover:scale-102.5 absolute top-4 m-3 max-w-full rounded-xl bg-slate-700 p-3 text-left font-serif text-xl text-gray-100 transition-transform sm:left-4 lg:w-2/3 xl:w-3/5 xl:text-2xl 2xl:w-1/2"
   >
     <span class="quotation-mark">&ldquo;</span>
     <span class="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;</span>
     <span>{Quotes.harvard}</span>
     <span class="nbsp">&nbsp;</span>
     <span class="quotation-mark">&rdquo;</span>
-    <p class="text-right pr-12">— said me, on one of my University App Essay</p>
+    <p class="pr-12 text-right">— said me, on one of my University App Essay</p>
   </blockquote>
   <button
     class="big-picture-nav"
@@ -32,7 +32,7 @@
 
 <style lang="postcss">
   .quotation-mark {
-    @apply absolute text-emerald-400 text-4xl xl:text-5xl select-none;
+    @apply absolute select-none text-4xl text-emerald-400 xl:text-5xl;
   }
 
   .nbsp {

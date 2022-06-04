@@ -17,7 +17,7 @@
 
 <style lang="postcss">
   .lang-icon {
-    @apply bg-center bg-contain bg-no-repeat cursor-pointer absolute;
-    @apply w-12 h-12 top-2.5 right-2.5 rounded;
+    @apply absolute cursor-pointer bg-contain bg-center bg-no-repeat;
+    @apply top-2.5 right-2.5 h-12 w-12 rounded;
   }
 </style>

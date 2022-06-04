@@ -9,7 +9,7 @@
   width={size}
   height={size}
   fill="currentColor"
-  class="bi bi-chevron-down transition-all duration-500 my-auto"
+  class="bi bi-chevron-down my-auto transition-all duration-500"
   class:-rotate-90={open}
   viewBox="0 0 16 16"
 >

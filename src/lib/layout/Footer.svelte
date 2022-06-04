@@ -6,7 +6,7 @@
   import { Version, BuildTime } from "../../config.g";
 </script>
 
-<main class="w-full bg-slate-800 h-32 lg:h-16 py-2 px-6 xl:px-8 text-white">
+<main class="h-32 w-full bg-slate-800 py-2 px-6 text-white lg:h-16 xl:px-8">
   <div class="left flex flex-row items-center gap-2">
     <a
       class="nav-label hover:text-gray-300"
@@ -16,14 +16,14 @@
     >
       <GitHub size="24" />
     </a>
-    <p class="font-semibold text-xl">Copyright © 2022 Leomotors</p>
+    <p class="text-xl font-semibold">Copyright © 2022 Leomotors</p>
   </div>
 
   <div class="middle text-lg" title="Version: {Version} @ {BuildTime}">
     Last Updated: {timeago(BuildTime)}
   </div>
 
-  <div class="right flex flex-col items-center lg:items-end justify-center">
+  <div class="right flex flex-col items-center justify-center lg:items-end">
     <p>
       <a
         class="text-sky-300 hover:text-sky-200"
@@ -40,6 +40,6 @@
 
 <style lang="postcss">
   main {
-    @apply flex flex-col lg:flex-row items-center justify-between;
+    @apply flex flex-col items-center justify-between lg:flex-row;
   }
 </style>

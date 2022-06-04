@@ -12,7 +12,7 @@
 </script>
 
 <div
-  class="lang-cards flex flex-col lg:flex-row justify-center items-center px-6"
+  class="lang-cards flex flex-col items-center justify-center px-6 lg:flex-row"
 >
   <div class="lang-card">
     <h1>Language</h1>
@@ -45,7 +45,7 @@
         <p>2020年12月 合格 (パーセンタイル 92.8)</p>
       </Accordion>
     </div>
-    <h2 class="card-footer text-gray-500 px-4 pb-4 text-sm">
+    <h2 class="card-footer px-4 pb-4 text-sm text-gray-500">
       Yes, this is my language skill. Isn't this what you are expecting?
     </h2>
   </div>
@@ -70,20 +70,20 @@
 
 <style lang="postcss">
   .lang-card {
-    @apply shadow-lg w-full md:w-2/3 xl:w-2/5 2xl:w-1/3 bg-white rounded-lg m-12 expand;
+    @apply m-12 w-full rounded-lg bg-white shadow-lg expand md:w-2/3 xl:w-2/5 2xl:w-1/3;
   }
 
   .lang-card > h1 {
     /* Card Title */
-    @apply p-2 font-semibold text-2xl;
+    @apply p-2 text-2xl font-semibold;
   }
 
   .lang-card > hr {
     /* Card Line */
-    @apply text-gray-300 mx-4;
+    @apply mx-4 text-gray-300;
   }
 
   .langs {
-    @apply font-bold text-lg;
+    @apply text-lg font-bold;
   }
 </style>

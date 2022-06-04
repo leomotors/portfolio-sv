@@ -4,7 +4,7 @@
   export let data: ImageCardData;
 </script>
 
-<div class="card bg-white dark:bg-slate-700 dark:shadow-white expand-sm">
+<div class="card bg-white expand-sm dark:bg-slate-700 dark:shadow-white">
   <div
     class="img {data.link ? 'cursor-pointer' : ''} {data.bgtl
       ? 'bg-left-top'
@@ -18,17 +18,17 @@
     <slot />
   </div>
   <div class="card-detail p-4">
-    <h1 class="font-bold text-xl">{data.title}</h1>
+    <h1 class="text-xl font-bold">{data.title}</h1>
     <h2>{data.desc}</h2>
   </div>
 </div>
 
 <style lang="postcss">
   .card {
-    @apply rounded-lg shadow-lg m-4;
+    @apply m-4 rounded-lg shadow-lg;
   }
 
   .img {
-    @apply w-full h-56 rounded-t-lg bg-no-repeat relative;
+    @apply relative h-56 w-full rounded-t-lg bg-no-repeat;
   }
 </style>

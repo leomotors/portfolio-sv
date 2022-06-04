@@ -4,18 +4,18 @@
   const totalSchools = schools.length;
 </script>
 
-<main class="w-5/6 bg-white rounded-xl shadow-xl mx-auto px-4">
-  <h1 class="font-bold text-3xl text-left ml-4 pt-4">Education History</h1>
-  <hr class="text-gray-300 mx-4 mt-4" />
+<main class="mx-auto w-5/6 rounded-xl bg-white px-4 shadow-xl">
+  <h1 class="ml-4 pt-4 text-left text-3xl font-bold">Education History</h1>
+  <hr class="mx-4 mt-4 text-gray-300" />
   <div
-    class="card-content overflow-x-hidden flex flex-col md:flex-row align-center justify-evenly py-6"
+    class="card-content align-center flex flex-col justify-evenly overflow-x-hidden py-6 md:flex-row"
   >
     {#each schools as school, index}
       <div
-        class="school-card bg-gray-200 max-w-full sm:w-72 xl:w-80 2xl:w-96 mx-auto mt-4 md:mt-0 md:mx-2 rounded shadow-xl expand"
+        class="school-card mx-auto mt-4 max-w-full rounded bg-gray-200 shadow-xl expand sm:w-72 md:mx-2 md:mt-0 xl:w-80 2xl:w-96"
       >
         <div
-          class="card-image w-full h-32 xl:h-40 2xl:h-48 bg-cover bg-center rounded-t hover:cursor-pointer"
+          class="card-image h-32 w-full rounded-t bg-cover bg-center hover:cursor-pointer xl:h-40 2xl:h-48"
           style="background-image: url({school.image})"
           on:click={() => {
             school.website && window.open(school.website, "_blank", "noopener");
@@ -43,6 +43,6 @@
 
 <style lang="postcss">
   .school-name {
-    @apply font-bold text-xl;
+    @apply text-xl font-bold;
   }
 </style>

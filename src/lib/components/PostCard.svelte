@@ -13,13 +13,13 @@
     goto(link);
   }}
 >
-  <h1 class="font-bold text-2xl">{data.title}</h1>
+  <h1 class="text-2xl font-bold">{data.title}</h1>
   <h2>{data.desc}</h2>
   <h2>{data.date}</h2>
 </div>
 
 <style lang="postcss">
   .card {
-    @apply expand-sm rounded-lg shadow-lg m-4 p-4 h-56 cursor-pointer;
+    @apply m-4 h-56 cursor-pointer rounded-lg p-4 shadow-lg expand-sm;
   }
 </style>

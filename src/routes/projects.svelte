@@ -15,7 +15,7 @@
     Projects related to Programming and Technology I have done
   </h2>
 
-  <p class="w-[90%] lg:w-3/5 mx-auto mb-10">&ldquo;{harvard}&rdquo;</p>
+  <p class="mx-auto mb-10 w-[90%] lg:w-3/5">&ldquo;{harvard}&rdquo;</p>
 
   <!-- Featured GitHub Repositories -->
   <BigCard
@@ -23,7 +23,7 @@
     subtitle="Some of Amazing projects I have done and is available on my individual
   GitHub Account"
   >
-    <p slot="card-footer" class="text-left ml-6">
+    <p slot="card-footer" class="ml-6 text-left">
       For all of my repositories, you may visit my
       <a href="https://github.com/Leomotors?tab=repositories" {...ext}>
         GitHub Account

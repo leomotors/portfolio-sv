@@ -7,7 +7,7 @@ const transitionTransform = {
 };
 
 module.exports = {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ["./src/**/*.{html,js,svelte,ts,css}"],
 
   darkMode: "class",
 
