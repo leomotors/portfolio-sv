@@ -1,6 +1,4 @@
 <script lang="ts">
-  import "./projects.css";
-
   import BigCard from "$lib/components/BigCard.svelte";
   import ext from "$lib/components/ext";
   import RepoCard from "$lib/components/RepoCard.svelte";
@@ -57,3 +55,9 @@
     {/each}
   </BigCard>
 </main>
+
+<style lang="scss">
+  a {
+    @apply text-blue-700 transition-all hover:text-pink-600 gdark:text-blue-400 gdark:hover:text-pink-400;
+  }
+</style>

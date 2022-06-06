@@ -18,7 +18,7 @@
   <h2>{data.date}</h2>
 </div>
 
-<style lang="postcss">
+<style lang="scss">
   .card {
     @apply m-4 h-56 cursor-pointer rounded-lg p-4 shadow-lg expand-sm;
   }

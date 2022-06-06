@@ -38,7 +38,7 @@
   </div>
 </main>
 
-<style lang="postcss">
+<style lang="scss">
   main {
     @apply flex flex-col items-center justify-between lg:flex-row;
   }

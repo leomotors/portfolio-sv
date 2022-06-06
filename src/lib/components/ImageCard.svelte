@@ -23,7 +23,7 @@
   </div>
 </div>
 
-<style lang="postcss">
+<style lang="scss">
   .card {
     @apply m-4 rounded-lg shadow-lg;
   }

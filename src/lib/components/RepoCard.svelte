@@ -15,7 +15,7 @@
   {/if}
 </ImageCard>
 
-<style lang="postcss">
+<style lang="scss">
   .lang-icon {
     @apply absolute cursor-pointer bg-contain bg-center bg-no-repeat;
     @apply top-2.5 right-2.5 h-12 w-12 rounded;

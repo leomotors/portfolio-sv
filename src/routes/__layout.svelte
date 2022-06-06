@@ -1,10 +1,7 @@
 <script lang="ts">
   import { NavBar } from "@leomotors/sv-components";
 
-  import "../app.css";
-  import "$lib/styles/global.css";
-  import "$lib/styles/bigcard.css";
-  import "$lib/styles/cardpage.css";
+  import "../app.scss";
 
   import { goto } from "$app/navigation";
   import Footer from "$lib/layout/Footer.svelte";
