@@ -13,7 +13,7 @@
   <slot name="card-footer" />
 </main>
 
-<style lang="scss">
+<style global lang="scss">
   .big-card {
     @apply m-4 max-w-full rounded-xl bg-gray-100 p-4 shadow-lg gdark:bg-black gdark:shadow-white;
 

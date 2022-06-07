@@ -13,7 +13,9 @@
     Projects related to Programming and Technology I have done
   </h2>
 
-  <p class="mx-auto mb-10 w-[90%] lg:w-3/5">&ldquo;{harvard}&rdquo;</p>
+  <p class="mx-auto mb-10 w-[90%] font-serif text-2xl lg:w-3/5">
+    &ldquo;{harvard}&rdquo;
+  </p>
 
   <!-- Featured GitHub Repositories -->
   <BigCard
@@ -27,7 +29,7 @@
         GitHub Account
       </a>
       or
-      <a href="https://repos.leomotors.vercel.app/" {...ext}> this website </a>
+      <a href="https://repos.leomotors.me" {...ext}> this website </a>
     </p>
     {#each featured as repo}
       <RepoCard data={repo} />
