@@ -105,6 +105,11 @@
             "name": "Raspberry Pi",
             "img": "https://www.raspberrypi.com/app/uploads/2022/02/COLOUR-Raspberry-Pi-Symbol-Registered.png",
             "star": 3
+        },
+        {
+            "name": "OpenCV",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png",
+            "star": 3
         }
     ]
 }

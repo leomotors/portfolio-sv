@@ -18,8 +18,8 @@
     <slot />
   </div>
   <div class="card-detail p-4">
-    <h1 class="text-xl font-bold">{data.title}</h1>
-    <h2>{data.desc}</h2>
+    <p class="text-xl font-bold">{data.title}</p>
+    <p>{data.desc}</p>
   </div>
 </div>
 

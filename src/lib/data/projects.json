@@ -38,6 +38,13 @@
             "img": "https://c.tenor.com/mt2Vk3J0GPwAAAAC/failure-steven-he.gif"
         },
         {
+            "title": "Golden Frame",
+            "link": "https://github.com/Leomotors/golden-frame",
+            "desc": "Golden Frame \"กรอบทอง\" Generator. CLI App written in Python with OpenCV. My first package on PyPI",
+            "language": "Python",
+            "img": "https://github.com/Leomotors/blog/raw/main/.gitbook/assets/image.png"
+        },
+        {
             "title": "Simple RLC Calculator",
             "link": "https://github.com/Leomotors/Simple-RLC-Calculator",
             "desc": "Simple RLC Calculator with Visualization & GUI, (Not) Enough for High School Exam Topics, Made with pygame",
