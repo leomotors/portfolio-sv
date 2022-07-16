@@ -1,5 +1,7 @@
 # My Portfolio
 
+*Note: portfolio-sv is now moved to my monorepo for profile [Leomotors/Leomotors](https://github.com/Leomotors/Leomotors)*
+
 My Portfolio powered by SvelteKit
 
 **Note**: Despite I marked this as production/public ready, it is actually not ready yet.
